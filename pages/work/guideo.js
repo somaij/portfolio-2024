@@ -96,7 +96,6 @@ export default function Guideo() {
                                             original="/images/guideo-prototype-1.jpg"
                                             width="1200"
                                             height="1200"
-                                            caption="Masthead & navigation"
                                         >
                                             {({ ref, open }) => (
                                                 <Image
@@ -109,8 +108,10 @@ export default function Guideo() {
                                         </Item>
                                     </div>
                                     <span>
-                                        First quarterly offerings page. It's a
-                                        page with many cards in 5 sections.
+                                        The homepage of the wireframe. After
+                                        testing, I found out it was best to
+                                        stick to an interface like Google Maps,
+                                        due to relatability.
                                     </span>
                                 </div>
                                 <div className="gallery-image-wrapper">
@@ -119,7 +120,6 @@ export default function Guideo() {
                                             original="/images/guideo-prototype-4.jpg"
                                             width="1200"
                                             height="1200"
-                                            caption="Region section & quotes"
                                         >
                                             {({ ref, open }) => (
                                                 <Image
@@ -132,8 +132,9 @@ export default function Guideo() {
                                         </Item>
                                     </div>
                                     <span>
-                                        Final quarterly offerings page. Notice
-                                        the toggable descriptions.
+                                        This wireframe showcases the swapping
+                                        from catching a bus to just walking, as
+                                        the bus has been delayed.
                                     </span>
                                 </div>
                             </Gallery>

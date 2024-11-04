@@ -119,13 +119,14 @@ export default function Post({ postData }) {
                         dangerouslySetInnerHTML={{
                             __html: postData.contentHtml,
                         }}
+                        escapeHtml={false}
                     />
                 </div>
             </article>
             <div id="blog-post-cta" className="end-cta">
                 <div className="blob">
                     <svg
-                        class="blob-cta-svg"
+                        className="blob-cta-svg"
                         viewBox="0 0 500 500"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"

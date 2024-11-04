@@ -8,6 +8,7 @@
   "dependencies": {
     "anime": "^0.1.2",
     "animejs": "^3.2.2",
+    "axios": "^1.7.7",
     "date-fns": "^3.6.0",
     "eslint-config-next": "^15.0.2",
     "gray-matter": "^4.0.3",

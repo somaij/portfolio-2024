@@ -5,7 +5,7 @@ import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Date from "../components/date";
 import Image from "next/image";
-
+import ContactForm from "../components/ContactForm";
 import anime from "animejs";
 import { useEffect } from "react";
 
@@ -132,52 +132,55 @@ export default function Home({ allPostsData }) {
                 <title>{siteTitle}</title>
             </Head>
             <section id="masthead">
-                <div id="header-background">
-                    <svg
-                        className="mast-blob-svg blob-1"
-                        viewBox="700 0 1 900"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            d="M-5.3894 1389.89C-5.3894 1389.89 -373.534 982.764 -10.8724 543.405C351.789 104.045 324.002 214.227 762.458 -25.6177C1200.91 -265.463 1211.4 -191.029 1442 -253.524C1672.6 -316.019 1840.57 -166.604 2029.23 -219.327C2217.89 -272.05 1979.57 1377.03 1979.57 1377.03L-5.3894 1389.89Z"
-                            fill="#000"
-                            fillOpacity="0.1"
-                        />
-                    </svg>
+                <div className="background-wrapper">
+                    <div id="header-background">
+                        <svg
+                            className="mast-blob-svg blob-1"
+                            viewBox="700 0 1 900"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M-5.3894 1389.89C-5.3894 1389.89 -373.534 982.764 -10.8724 543.405C351.789 104.045 324.002 214.227 762.458 -25.6177C1200.91 -265.463 1211.4 -191.029 1442 -253.524C1672.6 -316.019 1840.57 -166.604 2029.23 -219.327C2217.89 -272.05 1979.57 1377.03 1979.57 1377.03L-5.3894 1389.89Z"
+                                fill="#000"
+                                fillOpacity="0.1"
+                            />
+                        </svg>
 
-                    <svg
-                        className="mast-blob-svg blob-2"
-                        viewBox="750 10 1 1100"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            d="M-3.32133 1651.19C-3.32133 1651.19 -475.219 1128.05 -8.8043 804.708C457.611 481.369 535.61 403.862 785.627 251.239C1035.64 98.6168 1219.81 47.2321 1444.06 7.77919C1668.31 -31.6737 1842.64 94.6989 2031.3 41.9759C2219.96 -10.747 1981.64 1638.33 1981.64 1638.33L-3.32133 1651.19Z"
-                            fill="#000"
-                            fillOpacity="0.1"
-                        />
-                    </svg>
+                        <svg
+                            className="mast-blob-svg blob-2"
+                            viewBox="750 10 1 1100"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M-3.32133 1651.19C-3.32133 1651.19 -475.219 1128.05 -8.8043 804.708C457.611 481.369 535.61 403.862 785.627 251.239C1035.64 98.6168 1219.81 47.2321 1444.06 7.77919C1668.31 -31.6737 1842.64 94.6989 2031.3 41.9759C2219.96 -10.747 1981.64 1638.33 1981.64 1638.33L-3.32133 1651.19Z"
+                                fill="#000"
+                                fillOpacity="0.1"
+                            />
+                        </svg>
 
-                    <svg
-                        className="mast-blob-svg blob-3"
-                        viewBox="300 20 3 1300"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            d="M-1.09868 1690.36C-1.09868 1690.36 -320.956 1327.42 -6.58165 843.879C307.792 360.343 542.38 450.326 771.32 285.839C1000.26 121.353 1339.04 85.6463 1446.29 46.9507C1553.54 8.25518 1886.43 -87.3795 2042.83 206.602C2199.24 500.583 1983.86 1677.5 1983.86 1677.5L-1.09868 1690.36Z"
-                            fill="#000"
-                            fillOpacity="0.1"
-                        />
-                    </svg>
+                        <svg
+                            className="mast-blob-svg blob-3"
+                            viewBox="300 20 3 1300"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M-1.09868 1690.36C-1.09868 1690.36 -320.956 1327.42 -6.58165 843.879C307.792 360.343 542.38 450.326 771.32 285.839C1000.26 121.353 1339.04 85.6463 1446.29 46.9507C1553.54 8.25518 1886.43 -87.3795 2042.83 206.602C2199.24 500.583 1983.86 1677.5 1983.86 1677.5L-1.09868 1690.36Z"
+                                fill="#000"
+                                fillOpacity="0.1"
+                            />
+                        </svg>
+                    </div>
                 </div>
-
                 <div className="container">
                     <div className="masthead-header">
                         <div className="sub">Design and Developer Leader</div>
                         <h1>Creating simplicity</h1>
                     </div>
+                </div>
+                <div className="container">
                     <div id="home-work">
                         <h2>Work</h2>
                         <div id="hydro-row">
@@ -463,47 +466,7 @@ export default function Home({ allPostsData }) {
                             </div>
                         </div>
                         <div className="form">
-                            <form
-                                name="contactForm"
-                                method="post"
-                                data-netlify="true"
-                                netlify-honeypot="bot-field"
-                            >
-                                <input
-                                    type="hidden"
-                                    name="form-name"
-                                    value="contactForm"
-                                />
-                                <div className="input-wrapper">
-                                    <input
-                                        type="text"
-                                        name="name"
-                                        placeholder="Johnny Appleseed"
-                                        required
-                                    />
-                                    <label>Name</label>
-                                </div>
-                                <div className="input-wrapper">
-                                    <input
-                                        type="email"
-                                        name="email"
-                                        placeholder="johnny.appleseed@gmail.com"
-                                        required
-                                    />
-                                    <label>Email</label>
-                                </div>
-                                <div className="input-wrapper">
-                                    <textarea
-                                        name="message"
-                                        placeholder="Your stuff is cool. I have a question about..."
-                                        required
-                                    ></textarea>
-                                    <label>Message</label>
-                                </div>
-                                <button type="submit" className="btn solid">
-                                    Send
-                                </button>
-                            </form>
+                            <ContactForm />
                         </div>
                     </div>
                 </div>
