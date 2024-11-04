@@ -39,7 +39,7 @@ export default function Layout({ children, home }) {
                 }
             </header>
             <main>{children}</main>
-            <footer>Jason Somai</footer>
+            <footer>Made with Next.js by Jason Somai</footer>
         </main>
     );
 }
