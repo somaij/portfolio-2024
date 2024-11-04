@@ -176,7 +176,7 @@ export default function Home({ allPostsData }) {
                 </div>
                 <div className="container">
                     <div className="masthead-header">
-                        <div className="sub">Design and Developer Leader</div>
+                        <div className="sub">Design and Dev Leader</div>
                         <h1>Creating simplicity</h1>
                     </div>
                 </div>
