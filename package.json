@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start"
+  },
+  "dependencies": {
+    "anime": "^0.1.2",
+    "animejs": "^3.2.2",
+    "date-fns": "^3.6.0",
+    "eslint-config-next": "^15.0.2",
+    "gray-matter": "^4.0.3",
+    "next": "^15.0.2",
+    "photoswipe": "^5.4.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-photoswipe-gallery": "^3.0.1",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
+    "yet-another-react-lightbox": "^3.18.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "sass": "^1.75.0"
+  }
+}

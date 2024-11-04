@@ -1,0 +1,22 @@
+.container {
+    max-width: $desktop-container;
+    padding: 0 1rem;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.header {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.backToHome {
+margin: 3rem 0 0;
+}
+
+.cardWrapper{
+    display: flex;
+    gap:2rem;
+    align-items: stretch;
+}
