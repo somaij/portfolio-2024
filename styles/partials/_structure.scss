@@ -791,12 +791,12 @@ footer {
     &.white-background {
         .gallery-image-wrapper {
             background-color: #fff;
-            border: 1px solid #e5e5e5;
+            border: 1px solid #ccc;
             border-radius: 8px;
             padding: 1rem;
         }
         img {
-            border: 1px solid #e5e5e5;
+            border: 1px solid #ddd;
         }
     }
     .gallery-image-wrapper {
@@ -807,14 +807,16 @@ footer {
             width: 100%;
             display: flex;
             flex-direction: column;
-            background-color: $text-blue;
+            background-color: #fff;
             border-radius: 8px;
+            overflow: hidden;
+            transition: 250ms all ease;
             img {
                 transition: 250ms all ease;
-                border-radius: 8px;
                 object-fit: cover;
             }
             &:hover {
+                background-color: $text-blue;
                 img {
                     opacity: 0.8;
                 }
