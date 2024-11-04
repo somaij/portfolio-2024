@@ -4,16 +4,17 @@ import Image from "next/image";
 // import utilStyles from '../styles/utils.module.css';
 import Link from "next/link";
 
-export const siteTitle = "Jason Somai's Portfolio";
+export const siteTitle =
+    "Jason Somai's Portfolio | Design and Development hand-in-hand";
 
 export default function Layout({ children, home }) {
     return (
         <main>
             <Head>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/favicon.png" />
                 <meta
                     name="description"
-                    content="Learn how to build a personal website using Next.js"
+                    content="Jason's portfolio. A collection of his past design and development work, and the blogs that he writes."
                 />
                 <meta
                     property="og:image"
@@ -31,8 +32,8 @@ export default function Layout({ children, home }) {
                             <Link href="/">Jason Somai</Link>
                         </div>
                         <div className="menu">
-                            <Link href="/blog">Blog</Link>
-                            <Link href="#work">Work</Link>
+                            <Link href="/#home-blog">Blog</Link>
+                            <Link href="/#home-work">Work</Link>
                         </div>
                     </nav>
                 }
