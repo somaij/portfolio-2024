@@ -302,13 +302,13 @@ export default function Home({ allPostsData }) {
                                     for Ferraz Creative:
                                 </p>
                                 <div className="text-links">
-                                    <Link href="work/tla-canadian-tire">
-                                        SMG Construction
-                                    </Link>
-                                    <Link href="work/tla-canadian-tire">
+                                    <Link href="https://workhaus.ca/">
                                         Workhaus
                                     </Link>
-                                    <Link href="work/tla-canadian-tire">
+                                    <Link href="https://smgconstruction.com/">
+                                        SMG Construction
+                                    </Link>
+                                    <Link href="https://dkcbahamas.com/">
                                         DKC Bahamas
                                     </Link>
                                 </div>

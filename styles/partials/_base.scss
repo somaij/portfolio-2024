@@ -1096,14 +1096,25 @@ svg path {
     }
 }
 .page-404 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 5rem 0 0;
-    background-color: $dark-gray;
+    background-color: $text-blue;
+    background-image: url("/geography.svg");
     color: #fff;
-    h1 {
+    min-height: 100vh;
+    h1,
+    h2 {
         color: #fff;
     }
-    p a {
-        color: $blue;
+    h2 {
+        font-size: 1.8rem;
+    }
+    ul a {
+        color: #fff;
+        text-decoration: underline;
+        font-weight: 600;
     }
     .row {
         padding-bottom: 3rem;
