@@ -236,7 +236,7 @@ export default function EnergizingLifeEverydayLocal() {
                         </ul>
                         <p>
                             These changes seemed to work, as cookie banner close
-                            actions went up by XX%. We sent the changes to our
+                            actions went up by 4%. We sent the changes to our
                             website vendor who implemented our CSS edits on all
                             pages.
                         </p>
