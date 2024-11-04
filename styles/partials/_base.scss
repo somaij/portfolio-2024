@@ -529,10 +529,10 @@ svg path {
         &:focus {
             border-color: $blue;
         }
-        &:valid {
-            background-color: transparent;
-            border-color: rgba($blue, 0.5);
-        }
+        // &:valid {
+        //     background-color: transparent;
+        //     border-color: rgba($blue, 0.5);
+        // }
     }
     input[type="submit"] {
         margin-top: 1rem;
