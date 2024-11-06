@@ -3,6 +3,7 @@ import Image from "next/image";
 // import styles from './layout.module.css';
 // import utilStyles from '../styles/utils.module.css';
 import Link from "next/link";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 export const siteTitle =
     "Jason Somai's Portfolio | Design and Development hand-in-hand";
@@ -38,6 +39,11 @@ export default function Layout({ children, home }) {
                     </nav>
                 }
             </header>
+            {/* GTM */}
+            <GoogleTagManager
+                gtmId="
+GTM-MNDVSC5P"
+            />
             <main>{children}</main>
             <footer>Made with Next.js by Jason Somai</footer>
         </main>

@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@next/third-parties": "^15.0.2",
     "anime": "^0.1.2",
     "animejs": "^3.2.2",
     "axios": "^1.7.7",
