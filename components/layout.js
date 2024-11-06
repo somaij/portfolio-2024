@@ -40,10 +40,7 @@ export default function Layout({ children, home }) {
                 }
             </header>
             {/* GTM */}
-            <GoogleTagManager
-                gtmId="
-GTM-MNDVSC5P"
-            />
+            <GoogleTagManager gtmId="GTM-MNDVSC5P" />
             <main>{children}</main>
             <footer>Made with Next.js by Jason Somai</footer>
         </main>
