@@ -24,7 +24,7 @@ export default function Home({ allPostsData }) {
             direction: "alternate",
             keyframes: [
                 {
-                    d: "M162.667 1378.84C162.667 1378.84 -202.833 969.344 162.667 532.343C528.166 95.3418 541.666 397.342 981.666 160.342C1421.67 -76.658 1389.67 -194.158 1620.67 -255.158C1851.67 -316.158 2018.67 -165.658 2207.67 -217.158C2396.67 -268.658 2147.67 1378.84 2147.67 1378.84L162.667 1378.84Z",
+                    d: "M1356.5 -43.9999C1356.5 -43.9999 1910 412.5 1407.5 618C905 823.5 1191 130.5 784 286C377 441.5 346 475.5 234.5 791.5C123 1107.5 81.0445 869.267 -74.4266 1053.83C-229.898 1238.4 -31.9287 -44 -31.9287 -44L1356.5 -43.9999Z",
                 },
             ],
         }),
@@ -38,7 +38,7 @@ export default function Home({ allPostsData }) {
                 direction: "alternate",
                 keyframes: [
                     {
-                        d: "M187.667 1698.15C187.667 1698.15 -280.833 1171.96 187.667 851.653C656.166 531.342 869.166 668.842 1054.67 404.342C1240.17 139.842 1460.17 270.342 1645.67 64.1518C1831.17 -142.038 2043.67 153.651 2232.67 102.151C2421.67 50.6516 2172.67 1698.15 2172.67 1698.15L187.667 1698.15Z",
+                        d: "M1546.66 -43.9998C1546.66 -43.9998 1932.84 424.867 1562.5 749C1192.16 1073.13 1128 851.5 928.5 890C729 928.5 672.652 455.051 439.5 821.5C206.348 1187.95 118.402 1496.14 -3.4999 1248.5C-125.402 1000.86 -19.5165 -44 -19.5165 -44L1546.66 -43.9998Z",
                     },
                 ],
             }),
@@ -52,7 +52,7 @@ export default function Home({ allPostsData }) {
                 direction: "alternate",
                 keyframes: [
                     {
-                        d: "M141.667 1895.33C141.667 1895.33 -175.833 1530.32 141.667 1048.83C459.166 567.341 857.666 676.83 960.667 676.83C1063.67 676.83 1304.17 697.842 1599.67 261.33C1895.17 -175.181 2032.17 4.34218 2186.67 299.33C2341.17 594.318 2126.67 1895.33 2126.67 1895.33L141.667 1895.33Z",
+                        d: "M1618.7 -44C1618.7 -44 1834.5 -55.5 1834.5 759C1834.5 1573.5 1166 807.5 905.418 1305.12C644.836 1802.73 702.11 1228.5 549.5 1443.5C396.89 1658.5 202 1887 65 1641C-71.9999 1395 -14.3571 -44.0002 -14.3571 -44.0002L1618.7 -44Z",
                     },
                 ],
             }),
@@ -136,12 +136,12 @@ export default function Home({ allPostsData }) {
                     <div id="header-background">
                         <svg
                             className="mast-blob-svg blob-1"
-                            viewBox="700 0 1 900"
+                            viewBox="0 0 1790 1737"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                         >
                             <path
-                                d="M-5.3894 1389.89C-5.3894 1389.89 -373.534 982.764 -10.8724 543.405C351.789 104.045 324.002 214.227 762.458 -25.6177C1200.91 -265.463 1211.4 -191.029 1442 -253.524C1672.6 -316.019 1840.57 -166.604 2029.23 -219.327C2217.89 -272.05 1979.57 1377.03 1979.57 1377.03L-5.3894 1389.89Z"
+                                d="M1374.04 -43.9998C1374.04 -43.9998 1776.7 453.453 1374.04 538.277C971.371 623.1 1078.68 752.076 793.943 794.163C509.209 836.249 567.643 615.916 336.385 926.015C105.126 1236.11 81.0445 869.267 -74.4266 1053.83C-229.898 1238.4 -31.9287 -44 -31.9287 -44L1374.04 -43.9998Z"
                                 fill="#000"
                                 fillOpacity="0.1"
                             />
@@ -149,12 +149,12 @@ export default function Home({ allPostsData }) {
 
                         <svg
                             className="mast-blob-svg blob-2"
-                            viewBox="750 10 1 1100"
+                            viewBox="0 0 1790 1737"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                         >
                             <path
-                                d="M-3.32133 1651.19C-3.32133 1651.19 -475.219 1128.05 -8.8043 804.708C457.611 481.369 535.61 403.862 785.627 251.239C1035.64 98.6168 1219.81 47.2321 1444.06 7.77919C1668.31 -31.6737 1842.64 94.6989 2031.3 41.9759C2219.96 -10.747 1981.64 1638.33 1981.64 1638.33L-3.32133 1651.19Z"
+                                d="M1546.66 -43.9999C1546.66 -43.9999 1797.17 262.424 1546.66 666.632C1296.15 1070.84 981.733 978.926 900.466 978.926C819.198 978.926 629.442 961.287 396.29 1327.74C163.139 1694.19 55.0446 1543.48 -66.8572 1295.84C-188.759 1048.19 -19.5165 -44.0001 -19.5165 -44.0001L1546.66 -43.9999Z"
                                 fill="#000"
                                 fillOpacity="0.1"
                             />
@@ -162,12 +162,12 @@ export default function Home({ allPostsData }) {
 
                         <svg
                             className="mast-blob-svg blob-3"
-                            viewBox="300 20 3 1300"
+                            viewBox="0 0 1790 1737"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                         >
                             <path
-                                d="M-1.09868 1690.36C-1.09868 1690.36 -320.956 1327.42 -6.58165 843.879C307.792 360.343 542.38 450.326 771.32 285.839C1000.26 121.353 1339.04 85.6463 1446.29 46.9507C1553.54 8.25518 1886.43 -87.3795 2042.83 206.602C2199.24 500.583 1983.86 1677.5 1983.86 1677.5L-1.09868 1690.36Z"
+                                d="M1618.7 -43.9999C1618.7 -43.9999 2004.13 504.681 1618.7 838.684C1233.26 1172.69 1058.03 1029.31 905.418 1305.12C752.808 1580.92 571.815 1444.84 419.204 1659.85C266.594 1874.85 91.7704 1566.52 -63.7192 1620.22C-219.209 1673.93 -14.3571 -44.0001 -14.3571 -44.0001L1618.7 -43.9999Z"
                                 fill="#000"
                                 fillOpacity="0.1"
                             />
@@ -302,13 +302,22 @@ export default function Home({ allPostsData }) {
                                     for Ferraz Creative:
                                 </p>
                                 <div className="text-links">
-                                    <Link href="https://workhaus.ca/">
+                                    <Link
+                                        href="https://workhaus.ca/"
+                                        target="_blank"
+                                    >
                                         Workhaus
                                     </Link>
-                                    <Link href="https://smgconstruction.com/">
+                                    <Link
+                                        href="https://smgconstruction.com/"
+                                        target="_blank"
+                                    >
                                         SMG Construction
                                     </Link>
-                                    <Link href="https://dkcbahamas.com/">
+                                    <Link
+                                        href="https://dkcbahamas.com/"
+                                        target="_blank"
+                                    >
                                         DKC Bahamas
                                     </Link>
                                 </div>
@@ -426,42 +435,51 @@ export default function Home({ allPostsData }) {
                                         </div>
                                     </div>
                                     <p>
-                                        Hey there, I'm Jason. I'm currently
-                                        Hydro One's website Digital Manager. I
-                                        use my skills to empower my team to
-                                        craft imaginative web pages that help
-                                        Ontarians lower their electricity bill,
-                                        enroll in grant programs and understand
-                                        how Hydro One is making the energy
-                                        transition.
+                                        Hi, I’m Jason, Digital Manager for Hydro
+                                        One’s website, where I get to lead a
+                                        talented team in creating web
+                                        experiences that make a real
+                                        difference—helping Ontarians save on
+                                        energy, access grants, and stay informed
+                                        on our role in the energy transition.
                                     </p>
                                 </div>
                             </div>
                             <div className="bottom-content">
                                 <p>
-                                    From 2018 to 2022 I was Ferraz
-                                    Creative's Senior Developer, working for my
-                                    design mentor, Andre, where we made the some
-                                    of the most imaginative concepts come to
-                                    life. My magnum opus was developing
-                                    the Workhaus WordPress theme from scratch
-                                    and using ACF for ease of editing.
+                                    From 2018 to 2022 I was 
+                                    <Link
+                                        href="https://www.ferrazcreative.com/"
+                                        target="_blank"
+                                    >
+                                        Ferraz Creative's
+                                    </Link>
+                                     Senior Developer, I brought imaginative
+                                    concepts to life with my mentor, Andre,
+                                    including building the{" "}
+                                    <Link
+                                        href="https://workhaus.ca/"
+                                        target="_blank"
+                                    >
+                                        Workhaus WordPress website
+                                    </Link>{" "}
+                                    from scratch and implementing ACF for easy
+                                    content management.
                                 </p>
                                 <p>
-                                    I also take on a variety of side projects to
-                                    further enhance my design and development
-                                    abilities, such as the site you find
-                                    yourself on now or the website. In 2018 I
-                                    took a Brainstation User Experience
-                                    Design course that provided me with
-                                    foundational UX knowledge that I continue to
-                                    use every day.
+                                    I’m constantly exploring new ways to grow my
+                                    skills, whether through side projects, like
+                                    this site, or the Brainstation UX course I
+                                    took in 2018, which continues to shape how I
+                                    approach design and usability.
                                 </p>
                                 <p>
-                                    I'm a huge car nerd (current car: Cornflower
-                                    Blue Golf GTI), a video gamer, play golf
-                                    occasionally and find great pleasure in
-                                    discovering the city of Toronto.
+                                    Beyond work, I’m a car enthusiast with a
+                                    Cornflower Blue Golf GTI, driven by a love
+                                    for performance and design. I’m also an avid
+                                    gamer, inspired by immersive storytelling
+                                    and design, and I explore Toronto’s eclectic
+                                    architecture to fuel fresh creative ideas.
                                 </p>
                             </div>
                         </div>
