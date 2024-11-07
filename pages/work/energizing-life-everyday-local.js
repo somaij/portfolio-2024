@@ -338,11 +338,11 @@ export default function EnergizingLifeEverydayLocal() {
                             <strong> went up 10%</strong>.
                         </p>
                         <Link
-                            href="/#home-work"
+                            href="https://www.hydroone.com/energizing-life-everyday"
                             className="arrow-btn"
                             title="All Work"
                         >
-                            View Design
+                            View Page
                         </Link>
                     </section>
                 </div>
