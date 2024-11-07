@@ -608,35 +608,30 @@ export default function Guideo() {
                             delay.
                         </li>
                     </ol>
-                    <p>
-                        I came away from the course with a greater understand of
-                        how to produce a better user experience. I learned how
-                        to throw away my ego when being critiqued. How to stay
-                        silent and provide not provide answers during user
-                        testing. When and how to prod for knowledge the
-                        interviewee thought was common sense.
-                    </p>
-                    <p>
-                        Industry professionals{" "}
-                        <a href="https://www.linkedin.com/in/gerarddolan/">
-                            Gerard Dolan
-                        </a>{" "}
-                        and{" "}
-                        <a href="https://www.linkedin.com/in/david-aboutboul/">
-                            David Aboutboul
-                        </a>{" "}
-                        taught our class invaluable life and career lessons. I
-                        hope to carry a design thinking approach to everything
-                        that I do henceforth.
-                    </p>
+
                     <section id="results">
                         <h2>Results</h2>
                         <p>
-                            After implementing all of these process
-                            improvements, I saved several hours in Q3 and Q4 for
-                            myself and others on the team. This page was a major
-                            driver for content consumption within the
-                            organization.
+                            I came away from the course with a greater
+                            understand of how to produce a better user
+                            experience. I learned how to throw away my ego when
+                            being critiqued. How to stay silent and provide not
+                            provide answers during user testing. When and how to
+                            prod for knowledge the interviewee thought was
+                            common sense.
+                        </p>
+                        <p>
+                            Industry professionals{" "}
+                            <a href="https://www.linkedin.com/in/gerarddolan/">
+                                Gerard Dolan
+                            </a>{" "}
+                            and{" "}
+                            <a href="https://www.linkedin.com/in/david-aboutboul/">
+                                David Aboutboul
+                            </a>{" "}
+                            taught our class invaluable life and career lessons.
+                            I hope to carry a design thinking approach to
+                            everything that I do henceforth.
                         </p>
                     </section>
                 </div>
