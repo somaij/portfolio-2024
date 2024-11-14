@@ -14,6 +14,10 @@ export default function Layout({ children, home }) {
             <Head>
                 <link rel="icon" href="/favicon.png" />
                 <meta
+                    name="google-site-verification"
+                    content="7e6aFN2dXMhLOWia06eX9Z5D0iL_2P-ZEfMMR7Uv1pg"
+                />
+                <meta
                     name="description"
                     content="Jason's portfolio. A collection of his past design and development work, and the blogs that he writes."
                 />
