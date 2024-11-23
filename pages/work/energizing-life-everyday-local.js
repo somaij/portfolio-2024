@@ -10,14 +10,26 @@ import { Gallery, Item } from "react-photoswipe-gallery";
 
 export default function EnergizingLifeEverydayLocal() {
     const [open, setOpen] = React.useState(false);
-    const galOptions = {
+    const galOptionsLarge = {
         zoom: true,
+        initialZoomLevel: "fit",
+        secondaryZoomLevel: "fill",
+        maxZoomLevel: 10,
         counter: false,
         showHideAnimationType: "fade",
         bgOpacity: 0.9,
         padding: { top: 20, bottom: 40, left: 100, right: 100 },
     };
-
+    const galOptions = {
+        zoom: true,
+        initialZoomLevel: 1,
+        secondaryZoomLevel: "fill",
+        maxZoomLevel: 10,
+        counter: false,
+        showHideAnimationType: "fade",
+        bgOpacity: 0.9,
+        padding: { top: 20, bottom: 40, left: 100, right: 100 },
+    };
     useEffect(() => {
         anime({
             targets: "#blob-svg path",
@@ -82,13 +94,13 @@ export default function EnergizingLifeEverydayLocal() {
                             </p>
                         </div>
                         <div className="thumbnail-gallery-caption two-col">
-                            <Gallery options={galOptions}>
+                            <Gallery options={galOptionsLarge}>
                                 <div className="gallery-image-wrapper">
                                     <div className="image-wrapper">
                                         <Item
                                             original="/images/ELEL-high-fi-2.jpg"
                                             width="1440"
-                                            height="1440"
+                                            height="11016"
                                         >
                                             {({ ref, open }) => (
                                                 <Image
@@ -109,8 +121,8 @@ export default function EnergizingLifeEverydayLocal() {
                                     <div className="image-wrapper">
                                         <Item
                                             original="/images/ELEL-high-fi-1.jpg"
-                                            width="1024"
-                                            height="768"
+                                            width="1440"
+                                            height="9482"
                                             caption="Region section & quotes"
                                         >
                                             {({ ref, open }) => (

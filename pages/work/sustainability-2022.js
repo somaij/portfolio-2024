@@ -10,8 +10,21 @@ import { Gallery, Item } from "react-photoswipe-gallery";
 
 export default function Sustainability() {
     const [open, setOpen] = React.useState(false);
+    const galOptionsLarge = {
+        zoom: true,
+        initialZoomLevel: "fit",
+        secondaryZoomLevel: "fill",
+        maxZoomLevel: 10,
+        counter: false,
+        showHideAnimationType: "fade",
+        bgOpacity: 0.9,
+        padding: { top: 20, bottom: 40, left: 100, right: 100 },
+    };
     const galOptions = {
         zoom: true,
+        initialZoomLevel: 0.55,
+        secondaryZoomLevel: "fill",
+        maxZoomLevel: 10,
         counter: false,
         showHideAnimationType: "fade",
         bgOpacity: 0.9,
@@ -78,13 +91,13 @@ export default function Sustainability() {
                             </p>
                         </div>
                         <div className="thumbnail-gallery-caption two-col">
-                            <Gallery options={galOptions}>
+                            <Gallery options={galOptionsLarge}>
                                 <div className="gallery-image-wrapper">
                                     <div className="image-wrapper">
                                         <Item
                                             original="/images/sustainability-2021-homepage.jpg"
                                             width="1440"
-                                            height="2000"
+                                            height="4207"
                                         >
                                             {({ ref, open }) => (
                                                 <Image
@@ -106,7 +119,7 @@ export default function Sustainability() {
                                         <Item
                                             original="/images/sustainability-2022-final-version.jpg"
                                             width="1440"
-                                            height="2000"
+                                            height="12106"
                                         >
                                             {({ ref, open }) => (
                                                 <Image
@@ -148,13 +161,13 @@ export default function Sustainability() {
                                 </p>
                             </div>
                             <div className="thumbnail-gallery-caption two-col white-background">
-                                <Gallery options={galOptions}>
+                                <Gallery options={galOptionsLarge}>
                                     <div className="gallery-image-wrapper">
                                         <div className="image-wrapper">
                                             <Item
                                                 original="/images/sustainability-low-fi-mockup.png"
                                                 width="1440"
-                                                height="2000"
+                                                height="4222"
                                                 fill
                                             >
                                                 {({ ref, open }) => (
@@ -180,7 +193,7 @@ export default function Sustainability() {
                                             <Item
                                                 original="/images/sustainability-Ideation-concept-1.jpg"
                                                 width="1440"
-                                                height="2000"
+                                                height="12743"
                                                 fill
                                             >
                                                 {({ ref, open }) => (
@@ -223,8 +236,8 @@ export default function Sustainability() {
                                     <div className="image-wrapper">
                                         <Item
                                             original="/images/sustainability-header.jpg"
-                                            width="1024"
-                                            height="768"
+                                            width="1440"
+                                            height="698"
                                             caption="test"
                                         >
                                             {({ ref, open }) => (
@@ -247,8 +260,8 @@ export default function Sustainability() {
                                     <div className="image-wrapper">
                                         <Item
                                             original="/images/sustainability-3-ctas.jpg"
-                                            width="1024"
-                                            height="768"
+                                            width="1440"
+                                            height="1288"
                                             caption="test"
                                         >
                                             {({ ref, open }) => (
@@ -270,8 +283,8 @@ export default function Sustainability() {
                                     <div className="image-wrapper">
                                         <Item
                                             original="/images/sustainability-planet-section.jpg"
-                                            width="1024"
-                                            height="768"
+                                            width="1440"
+                                            height="1066"
                                             caption="test"
                                         >
                                             {({ ref, open }) => (

@@ -10,8 +10,21 @@ import { Gallery, Item } from "react-photoswipe-gallery";
 
 export default function Guideo() {
     const [open, setOpen] = React.useState(false);
+    const galOptionsLarge = {
+        zoom: true,
+        initialZoomLevel: "fit",
+        secondaryZoomLevel: "fill",
+        maxZoomLevel: 10,
+        counter: false,
+        showHideAnimationType: "fade",
+        bgOpacity: 0.9,
+        padding: { top: 20, bottom: 40, left: 100, right: 100 },
+    };
     const galOptions = {
         zoom: true,
+        initialZoomLevel: 0.75,
+        secondaryZoomLevel: "fill",
+        maxZoomLevel: 10,
         counter: false,
         showHideAnimationType: "fade",
         bgOpacity: 0.9,
@@ -89,13 +102,13 @@ export default function Guideo() {
                             </p>
                         </div>
                         <div className="thumbnail-gallery-caption two-col">
-                            <Gallery options={galOptions}>
+                            <Gallery options={galOptionsLarge}>
                                 <div className="gallery-image-wrapper">
                                     <div className="image-wrapper">
                                         <Item
                                             original="/images/guideo-prototype-1.jpg"
-                                            width="1200"
-                                            height="1200"
+                                            width="415"
+                                            height="895"
                                         >
                                             {({ ref, open }) => (
                                                 <Image
@@ -118,8 +131,8 @@ export default function Guideo() {
                                     <div className="image-wrapper">
                                         <Item
                                             original="/images/guideo-prototype-4.jpg"
-                                            width="1200"
-                                            height="1200"
+                                            width="414"
+                                            height="896"
                                         >
                                             {({ ref, open }) => (
                                                 <Image
@@ -210,8 +223,8 @@ export default function Guideo() {
                                 <div className="image-wrapper">
                                     <Item
                                         original="/images/ia.jpg"
-                                        width="1024"
-                                        height="768"
+                                        width="1182"
+                                        height="720"
                                         caption="test"
                                     >
                                         {({ ref, open }) => (
@@ -234,8 +247,8 @@ export default function Guideo() {
                                 <div className="image-wrapper">
                                     <Item
                                         original="/images/sara-persona.jpg"
-                                        width="1024"
-                                        height="768"
+                                        width="1280"
+                                        height="800"
                                         caption="test"
                                     >
                                         {({ ref, open }) => (
@@ -258,8 +271,8 @@ export default function Guideo() {
                                 <div className="image-wrapper">
                                     <Item
                                         original="/images/rupert-persona.jpg"
-                                        width="1024"
-                                        height="768"
+                                        width="1280"
+                                        height="800"
                                         caption="test"
                                     >
                                         {({ ref, open }) => (
@@ -295,8 +308,8 @@ export default function Guideo() {
                                     <div className="image-wrapper">
                                         <Item
                                             original="/images/sketch1.jpg"
-                                            width="1024"
-                                            height="768"
+                                            width="1280"
+                                            height="800"
                                             caption="test"
                                             fill
                                         >
@@ -363,8 +376,8 @@ export default function Guideo() {
                                     <div className="image-wrapper">
                                         <Item
                                             original="/images/sketch2.jpg"
-                                            width="1440"
-                                            height="1440"
+                                            width="1280"
+                                            height="800"
                                             fill
                                         >
                                             {({ ref, open }) => (
@@ -387,8 +400,8 @@ export default function Guideo() {
                                     <div className="image-wrapper">
                                         <Item
                                             original="/images/uf1.jpg"
-                                            width="1440"
-                                            height="1440"
+                                            width="1413"
+                                            height="481"
                                             fill
                                         >
                                             {({ ref, open }) => (
@@ -430,8 +443,8 @@ export default function Guideo() {
                                     <div className="image-wrapper">
                                         <Item
                                             original="/images/sketch3.jpg"
-                                            width="1440"
-                                            height="1440"
+                                            width="1280"
+                                            height="800"
                                             fill
                                         >
                                             {({ ref, open }) => (
@@ -454,8 +467,8 @@ export default function Guideo() {
                                     <div className="image-wrapper">
                                         <Item
                                             original="/images/uf2.jpg"
-                                            width="1440"
-                                            height="1440"
+                                            width="1196"
+                                            height="579"
                                             fill
                                         >
                                             {({ ref, open }) => (
@@ -495,7 +508,7 @@ export default function Guideo() {
                                 <div className="image-wrapper">
                                     <Item
                                         original="/images/wireframe-1.jpg"
-                                        width="1024"
+                                        width="1454"
                                         height="1024"
                                         caption="test"
                                     >
@@ -530,7 +543,7 @@ export default function Guideo() {
                                 <div className="image-wrapper">
                                     <Item
                                         original="/images/wireframe-2.jpg"
-                                        width="1024"
+                                        width="1909"
                                         height="1024"
                                         caption="test"
                                     >

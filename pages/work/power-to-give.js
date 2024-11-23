@@ -10,8 +10,21 @@ import { Gallery, Item } from "react-photoswipe-gallery";
 
 export default function PowerToGive() {
     const [open, setOpen] = React.useState(false);
+    const galOptionsLarge = {
+        zoom: true,
+        initialZoomLevel: "fit",
+        secondaryZoomLevel: "fill",
+        maxZoomLevel: 10,
+        counter: false,
+        showHideAnimationType: "fade",
+        bgOpacity: 0.9,
+        padding: { top: 20, bottom: 40, left: 100, right: 100 },
+    };
     const galOptions = {
         zoom: true,
+        initialZoomLevel: 0.75,
+        secondaryZoomLevel: "fill",
+        maxZoomLevel: 10,
         counter: false,
         showHideAnimationType: "fade",
         bgOpacity: 0.9,
@@ -77,13 +90,13 @@ export default function PowerToGive() {
                             </p>
                         </div>
                         <div className="thumbnail-gallery-caption two-col">
-                            <Gallery options={galOptions}>
+                            <Gallery options={galOptionsLarge}>
                                 <div className="gallery-image-wrapper">
                                     <div className="image-wrapper">
                                         <Item
                                             original="/images/PTG-2022.jpg"
-                                            width="1440"
-                                            height="2000"
+                                            width="1240"
+                                            height="8202"
                                         >
                                             {({ ref, open }) => (
                                                 <Image
@@ -105,8 +118,8 @@ export default function PowerToGive() {
                                     <div className="image-wrapper">
                                         <Item
                                             original="/images/PTG-2023.jpg"
-                                            width="1440"
-                                            height="2000"
+                                            width="930"
+                                            height="6673"
                                         >
                                             {({ ref, open }) => (
                                                 <Image
@@ -162,8 +175,8 @@ export default function PowerToGive() {
                                         <div className="image-wrapper">
                                             <Item
                                                 original="/images/ptg-graph-2022.jpg"
-                                                width="1440"
-                                                height="2000"
+                                                width="863"
+                                                height="608"
                                                 fill
                                             >
                                                 {({ ref, open }) => (
@@ -187,8 +200,8 @@ export default function PowerToGive() {
                                         <div className="image-wrapper">
                                             <Item
                                                 original="/images/ptg-2022-masthead.jpg"
-                                                width="1440"
-                                                height="2000"
+                                                width="855"
+                                                height="876"
                                                 fill
                                             >
                                                 {({ ref, open }) => (
@@ -229,8 +242,8 @@ export default function PowerToGive() {
                                     <div className="image-wrapper">
                                         <Item
                                             original="/images/ptg-2023-buttons.jpg"
-                                            width="1024"
-                                            height="768"
+                                            width="1040"
+                                            height="850"
                                             caption="test"
                                         >
                                             {({ ref, open }) => (
@@ -253,8 +266,8 @@ export default function PowerToGive() {
                                     <div className="image-wrapper">
                                         <Item
                                             original="/images/PTG-2023-event-list.jpg"
-                                            width="1024"
-                                            height="768"
+                                            width="1040"
+                                            height="680"
                                             caption="test"
                                         >
                                             {({ ref, open }) => (
@@ -278,8 +291,8 @@ export default function PowerToGive() {
                                     <div className="image-wrapper">
                                         <Item
                                             original="/images/PTG-2023-graph.jpg"
-                                            width="1024"
-                                            height="768"
+                                            width="1240"
+                                            height="777"
                                             caption="test"
                                         >
                                             {({ ref, open }) => (

@@ -10,8 +10,21 @@ import { Gallery, Item } from "react-photoswipe-gallery";
 
 export default function TLA() {
     const [open, setOpen] = React.useState(false);
+    const galOptionsLarge = {
+        zoom: true,
+        initialZoomLevel: "fit",
+        secondaryZoomLevel: "fill",
+        maxZoomLevel: 10,
+        counter: false,
+        showHideAnimationType: "fade",
+        bgOpacity: 0.9,
+        padding: { top: 20, bottom: 40, left: 100, right: 100 },
+    };
     const galOptions = {
         zoom: true,
+        initialZoomLevel: 0.5,
+        secondaryZoomLevel: "fill",
+        maxZoomLevel: 10,
         counter: false,
         showHideAnimationType: "fade",
         bgOpacity: 0.9,
@@ -83,13 +96,13 @@ export default function TLA() {
                             </p>
                         </div>
                         <div className="thumbnail-gallery-caption two-col">
-                            <Gallery options={galOptions}>
+                            <Gallery options={galOptionsLarge}>
                                 <div className="gallery-image-wrapper">
                                     <div className="image-wrapper">
                                         <Item
                                             original="/images/tla-offerings-page.jpg"
-                                            width="1200"
-                                            height="1200"
+                                            width="1920"
+                                            height="3464"
                                             caption="Masthead & navigation"
                                         >
                                             {({ ref, open }) => (
@@ -111,8 +124,8 @@ export default function TLA() {
                                     <div className="image-wrapper">
                                         <Item
                                             original="/images/tla-offerings-page-q4.jpg"
-                                            width="1200"
-                                            height="1200"
+                                            width="1920"
+                                            height="3223"
                                             caption="Region section & quotes"
                                         >
                                             {({ ref, open }) => (
@@ -161,8 +174,8 @@ export default function TLA() {
                                         <div className="image-wrapper">
                                             <Item
                                                 original="/images/tla-cards.png"
-                                                width="1024"
-                                                height="768"
+                                                width="1350"
+                                                height="1672"
                                                 caption="test"
                                                 fill
                                             >
@@ -267,8 +280,8 @@ export default function TLA() {
                                         <div className="image-wrapper">
                                             <Item
                                                 original="/images/tla-section-example.png"
-                                                width="1024"
-                                                height="768"
+                                                width="1920"
+                                                height="1200"
                                                 caption="test"
                                                 fill
                                             >
