@@ -7,6 +7,8 @@ import Image from "next/image";
 import Link from "next/link";
 import anime from "animejs";
 import { useEffect } from "react";
+import "photoswipe/dist/photoswipe.css";
+import { Gallery, Item } from "react-photoswipe-gallery";
 
 const random = (min, max) => {
     return Math.random() * (max - min) + min;

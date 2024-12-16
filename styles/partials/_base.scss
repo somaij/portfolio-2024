@@ -1053,6 +1053,7 @@ svg path {
             line-height: 1.2;
             color: #fff;
             z-index: 2;
+            text-wrap: pretty;
             @media screen and (max-width: 575px) {
                 font-size: 2rem;
             }
@@ -1067,12 +1068,22 @@ svg path {
     }
 }
 .blog-content {
-    padding-top: 3rem;
+    padding-top: 1rem;
+    margin: 0 auto;
+    max-width: 1140px;
     .regular-text {
-        color: rgba($dark-gray, 0.9);
+        color: $dark-gray;
+
         h2,
+        h3,
+        h4 {
+            color: $text-blue;
+        }
+        h2 {
+            font-size: 2.5rem;
+        }
         h3 {
-            font-weight: 500;
+            font-size: 2rem;
         }
         a {
             color: $blue;
@@ -1086,6 +1097,36 @@ svg path {
             @media screen and (max-width: 575px) {
                 font-size: 1.6rem;
             }
+        }
+        figure {
+            margin: 0 auto 2rem;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 1rem;
+            max-width: 90%;
+            @media screen and (max-width: 575px) {
+                padding: 0.5rem;
+                max-width: 100%;
+            }
+            img {
+                border-radius: 8px;
+                border: 1px solid #ddd;
+            }
+            figcaption {
+                margin-top: 1rem;
+                text-wrap: pretty;
+                @media screen and (max-width: 575px) {
+                    text-align: center;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+        img {
+            max-height: auto;
+        }
+        p {
+            text-wrap: pretty;
         }
     }
 }
