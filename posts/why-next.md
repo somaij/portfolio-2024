@@ -31,7 +31,7 @@ I kept my blob-based design aesthetic but refreshed it by creating new backgroun
 <figure>
     <img src="/images/blobs.png"
          alt="Photo of blobs">
-    <figcaption>Photo of blobs drawn in Figma. These were each copied as SVGs and put into the homepage.</figcaption>
+    <figcaption>Photo of blobs drawn in Figma. These were each copied as SVGs and put into the <a href="/" target="_blank">homepage</a>.</figcaption>
 </figure>
 
 Rather than doing a full UI redesign, I iterated on how the information I was providing was being interpreted.
@@ -47,13 +47,13 @@ One key realization came after asking for feedback from friends. They struggled 
 <figure>
     <img src="/images/elel-new-preview.jpg"
          alt="New project pages">
-    <figcaption>This is what I ended up going with - a dedicated page for each project that clearly states the issue at hand.</figcaption>
+    <figcaption>This is what I ended up going with - a dedicated page for each project that clearly states the issue at hand.<br><a href="/work/energizing-life-everyday-local" class="arrow-btn" target="_blank">View the final page</a></figcaption>
 </figure>
 
-I also focused on providing context for the imagery I was having users look at, rather than hoping they could associate the text around the image with it. This iterative approach made my portfolio more user-friendly and helped me better showcase my work.
+I also focused on providing context for the imagery I was having users look at, rather than hoping they could associate the text around the image with it. This iterative approach made my portfolio more user-friendly and helped me better showcase my [**work**](/#home-work).
 
 ### Fun Fact
 
-The most popular page on my old website was the Contact Form 7 blog. It consistently got visits across the globe, which is chalked up to WordPress and Contact Form 7's popularity.
+The most popular page on my old website was the [Contact Form 7 blog](/posts/how-to-do-floating-labels-for-cf7). It consistently got visits across the globe, which is chalked up to WordPress and Contact Form 7's popularity.
 
 I plan to write more and hopefully beat that page’s performance. It’s a low bar, but a bar nonetheless.
