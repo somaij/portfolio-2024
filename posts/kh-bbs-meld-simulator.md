@@ -1,15 +1,15 @@
 ---
 date: "2025-03-20"
 title: I used AI to build a fan project that I designed
-description: I moved to Next.js and made my portfolio more straightforward.
+description: From data design to coding, here's how AI helped, and where it failed.
 image: "/images/PXL_20250320_012847338.NIGHT.jpg"
 cta:
     ctaBtn: Send a message
     ctaTitle: Have thoughts? 
     ctaText: Let me know! I’d love to hear feedback and ideas for future updates.
 seo:
-    seoTitle: Redefining My Website’s User Experience with Next.js | Jason Somai
-    seoDescription: Discover how I redesigned my portfolio using Next.js and Vercel to enhance user experience, simplify workflows, and showcase projects more effectively. Explore the process and key UX improvements!
+    seoTitle: How I Used AI to Build a Kingdom Hearts Fusion Simulator | Jason Somai
+    seoDescription: I built a Kingdom Hearts Birth by Sleep Fusion Simulator using ChatGPT. From data architecture to coding, here's how AI helped, and where it failed.
 ---
 
 
