@@ -369,7 +369,7 @@ export default function Home({ allPostsData }) {
                 <div className="container">
                     <h2>Blog</h2>
                     <div className="cardWrapper">
-                        {allPostsData.map(
+                        {allPostsData.slice(0, 3).map(
                             ({ id, date, title, description, image }) => (
                                 <Link
                                     href={`/posts/${id}`}

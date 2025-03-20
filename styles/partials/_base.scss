@@ -69,7 +69,7 @@ svg path {
     // overflow: hidden;
     height: auto;
     background-position: top left;
-    background: linear-gradient(216.63deg, $dark-blue 21.32%, $blue 78.68%);
+    background: linear-gradient(216.63deg, $dark-blue 21.32%, $brand-blue 78.68%);
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -653,7 +653,7 @@ svg path {
     position: relative;
     overflow: hidden;
     a:hover {
-        color: lighten($blue, 30%);
+        color: lighten($brand-blue, 30%);
     }
     .blob {
         height: 100%;
@@ -681,7 +681,7 @@ svg path {
             path {
                 fill: $text-blue;
                 fill-opacity: 0.35;
-                stroke: $blue;
+                stroke: $brand-blue;
                 stroke-opacity: 0.2;
             }
         }
@@ -811,7 +811,7 @@ svg path {
     }
     #results {
         background-color: #fff;
-        border: 1px solid rgba($blue, 1);
+        border: 1px solid rgba($brand-blue, 1);
         border-radius: 8px;
         padding: 2rem;
         margin-top: 2rem;
@@ -984,6 +984,18 @@ svg path {
             width: 100%;
             object-fit: cover;
         }
+        &:before{
+            position: absolute;
+            display: block;
+            content:"";
+            height: 100px;
+            width: 100%;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+            z-index: 3;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
     }
 
     .share-button {
@@ -1111,6 +1123,8 @@ svg path {
             }
             img {
                 border-radius: 8px;
+                width: 100%;
+                height: auto;
                 border: 1px solid #ddd;
             }
             figcaption {
@@ -1122,6 +1136,20 @@ svg path {
                 }
             }
         }
+        table{
+            border-collapse: collapse;
+            tr.mobile{
+                
+                @media screen and (max-width: 575px) {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+            th,td{
+                padding:0.25rem 0.5rem;
+                border:1px solid rgba($text-blue, 0.5);
+        }
+        } 
         img {
             max-height: auto;
         }
