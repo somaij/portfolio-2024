@@ -4,6 +4,7 @@
 svg path {
     will-change: contents;
 }
+
 .background-wrapper {
     display: block;
     width: 105%;
@@ -13,6 +14,7 @@ svg path {
     left: -5%;
     top: -5%;
 }
+
 #header-background {
     z-index: 0;
     position: absolute;
@@ -21,21 +23,25 @@ svg path {
     left: 0;
     top: 0;
     margin: auto;
+
     .mast-blob-svg {
         position: absolute;
+
         // width: 100%;
         // height: 100%;
         @media screen and (max-width: 575px) {
             height: 750px;
         }
     }
+
     .bg {
         width: 100%;
         height: 100%;
         position: absolute;
     }
-    .bg path {
-    }
+
+    .bg path {}
+
     .bg path:first-child {
         opacity: 0.15;
     }
@@ -64,6 +70,7 @@ svg path {
         opacity: 0.15;
     }
 }
+
 #masthead {
     position: relative;
     // overflow: hidden;
@@ -76,6 +83,7 @@ svg path {
     justify-content: center;
     align-items: center;
     padding: 5rem;
+
     .container {
         position: relative;
     }
@@ -87,40 +95,50 @@ svg path {
         margin-bottom: 3rem;
         margin-top: 0;
         opacity: 0;
-        > div > div {
+
+        >div>div {
             margin-left: 1rem;
             display: inline-block;
+
             &:first-of-type {
                 margin-left: 0;
             }
         }
+
         span {
             display: inline-block;
             transform-origin: 0 0;
             will-change: transform;
             opacity: 0;
         }
+
         @media screen and (max-width: 991px) {
             font-size: 3rem;
         }
+
         @media screen and (max-width: 575px) {
             font-size: 2.2rem;
             margin-bottom: 0;
         }
     }
+
     .masthead-header {
         margin: 5rem auto;
         text-align: center;
+
         .sub {
             opacity: 0;
         }
+
         // @media screen and (max-width: 575px) {
         //     padding: 12rem 0 3rem;
         // }
     }
+
     .sub {
         color: #f7f7f7;
     }
+
     .content {
         margin-top: 6rem;
     }
@@ -128,9 +146,11 @@ svg path {
     @media screen and (min-height: 1080px) {
         // height:60vh;
     }
+
     @media screen and (max-width: 1199px) {
         padding: 3rem 2rem 2rem;
     }
+
     @media screen and (max-width: 767px) {
         padding: 3rem 0 2rem;
     }
@@ -144,21 +164,26 @@ svg path {
     background-color: rgba(#fff, 0.15);
     border-radius: 24px;
     width: 100%;
+
     @media screen and (max-width: 991px) {
         padding: 3rem 2rem;
     }
+
     @media screen and (max-width: 575px) {
         padding: 2rem 1rem;
         gap: 2rem;
     }
+
     h2 {
         margin: 0;
         text-align: center;
         color: #fff;
+
         @media screen and (max-width: 575px) {
             font-size: 2.2rem;
         }
     }
+
     #hydro-row {
         display: flex;
         gap: 1rem;
@@ -166,23 +191,28 @@ svg path {
         border: 1px solid #fff;
         border-radius: 8px;
         padding: 2rem;
+
         @media screen and (max-width: 575px) {
             padding: 1rem;
         }
+
         .row-title {
             h3 {
                 color: #fff;
                 margin: 0;
                 font-size: 1.6rem;
             }
+
             .sub {
                 margin-top: 1rem;
             }
+
             @media screen and (max-width: 575px) {
                 padding-top: 1rem;
                 text-align: center;
             }
         }
+
         .work-row {
             display: flex;
             gap: 1.5rem;
@@ -190,74 +220,85 @@ svg path {
             .work-preview {
                 width: 100%;
                 height: 365px;
+
                 @media screen and (max-width: 991px) {
                     height: 250px;
+
                     &:before {
-                        background: linear-gradient(
-                            255.43deg,
-                            rgba(0, 23, 31, 0) 0%,
-                            rgba(0, 23, 31, 0.35) 25%,
-                            rgba(0, 23, 31, 0.75) 100%
-                        );
+                        background: linear-gradient(255.43deg,
+                                rgba(0, 23, 31, 0) 0%,
+                                rgba(0, 23, 31, 0.35) 25%,
+                                rgba(0, 23, 31, 0.75) 100%);
                     }
                 }
             }
+
             @media screen and (max-width: 991px) {
                 gap: 1rem;
                 flex-direction: column;
             }
         }
     }
+
     .second-row {
         display: flex;
         gap: 1.5rem;
-        > a {
+
+        >a {
             width: 35%;
             height: 18rem;
+
             @media screen and (max-width: 991px) {
                 width: 100%;
                 height: 200px;
+
                 &:before {
-                    background: linear-gradient(
-                        255.43deg,
-                        rgba(0, 23, 31, 0) 0%,
-                        rgba(0, 23, 31, 0.35) 25%,
-                        rgba(0, 23, 31, 0.75) 100%
-                    );
+                    background: linear-gradient(255.43deg,
+                            rgba(0, 23, 31, 0) 0%,
+                            rgba(0, 23, 31, 0.35) 25%,
+                            rgba(0, 23, 31, 0.75) 100%);
                 }
             }
         }
+
         .text-card {
             height: 18rem;
             border: 1px solid #fff;
             border-radius: 8px;
             padding: 2rem;
             width: 30%;
+
             h3 {
                 margin: 0;
                 font-size: 1.8rem;
                 color: #fff;
             }
+
             color: #fff;
+
             .text-links {
                 display: flex;
                 flex-direction: column;
                 gap: 0.2rem;
             }
+
             a {
                 color: #fff;
                 text-decoration: underline;
                 font-weight: 600;
                 padding-bottom: 0.2rem;
                 border-bottom: 1px solid rgba(#fff, 0.25);
+
                 &:last-of-type {
                     border-bottom: none;
                 }
             }
+
             @media screen and (max-width: 991px) {
                 width: 100%;
             }
         }
+
         @media screen and (max-width: 991px) {
             gap: 1rem;
             flex-direction: column;
@@ -272,11 +313,14 @@ svg path {
         border-radius: 24px;
         position: relative;
         padding: 5rem 1rem;
+
         @media screen and (max-width: 575px) {
             padding: 3rem 0.25rem;
         }
+
         overflow: hidden;
         box-shadow: 0px 20px 20px rgba($blue, 0.1);
+
         .blob {
             height: 100%;
             width: 100%;
@@ -286,16 +330,19 @@ svg path {
             left: 0;
             right: 0;
             margin: 0 auto;
+
             @media screen and (max-width: 767px) {
                 height: 1000px;
                 width: 1000px;
             }
+
             svg {
                 z-index: 2;
                 width: 100%;
                 height: 100%;
             }
         }
+
         .container {
             z-index: 3;
         }
@@ -305,17 +352,22 @@ svg path {
 #home-blog {
     background-color: $dark-gray;
     padding: 10rem 0;
+
     @media screen and (max-width: 575px) {
         padding: 5rem 0 3rem;
     }
+
     position: relative;
+
     h2 {
         margin-bottom: 5rem;
         color: #fff;
+
         @media screen and (max-width: 575px) {
             margin-bottom: 2rem;
         }
     }
+
     .blog-blob {
         height: 100%;
         width: 100%;
@@ -325,6 +377,7 @@ svg path {
         right: 0;
         bottom: 0;
         margin: auto;
+
         @media screen and (max-width: 767px) {
             width: 1000px;
             height: 1000px;
@@ -333,6 +386,7 @@ svg path {
             bottom: 0;
             right: 0;
         }
+
         svg {
             z-index: 1;
             width: 100%;
@@ -340,15 +394,26 @@ svg path {
             position: absolute;
         }
     }
+
     .container {
         z-index: 3;
         position: relative;
     }
-    @media screen and (max-width: 575px) {
-        .cardWrapper {
+
+    .cardWrapper {
+        @media screen and (max-width: 991px) {
+
+            gap: 1rem;
+
+        }
+
+        @media screen and (max-width: 767px) {
+
             flex-direction: column;
+
         }
     }
+
 }
 
 #contact {
@@ -360,11 +425,13 @@ svg path {
 
     padding: 7rem 0;
     position: relative;
+
     .row {
         display: flex;
         gap: 2rem;
         justify-content: space-between;
         align-items: center;
+
         @media screen and (max-width: 767px) {
             flex-direction: column;
         }
@@ -373,20 +440,25 @@ svg path {
     @media screen and (max-width: 575px) {
         padding: 2rem 0;
     }
+
     h2 {
         font-size: 3rem;
         text-align: center;
     }
+
     h3 {
         font-size: 1.5rem;
         color: #fff;
     }
+
     .sub {
         color: $blue;
+
         &.line:after {
             background-color: $blue;
         }
     }
+
     #about {
         position: relative;
         padding: 2rem;
@@ -395,9 +467,11 @@ svg path {
         backdrop-filter: blur(5px);
         border-radius: 8px;
         width: 60%;
+
         @media screen and (max-width: 991px) {
             width: 45%;
         }
+
         @media screen and (max-width: 767px) {
             width: 100%;
         }
@@ -406,12 +480,15 @@ svg path {
             display: flex;
             align-items: center;
             gap: 2rem;
+
             .image {
                 height: 250px;
                 width: 250px;
+
                 @media screen and (max-width: 991px) {
                     width: 100%;
                 }
+
                 img {
                     width: 100%;
                     height: 100%;
@@ -419,32 +496,41 @@ svg path {
                     object-position: top;
                 }
             }
+
             @media screen and (min-width: 767px) and (max-width: 991px) {
                 flex-direction: column;
             }
+
             @media screen and (max-width: 575px) {
                 flex-direction: column;
+
                 .image {
                     height: 300px;
+
                     img {
                         object-position: 50% 12%;
                     }
                 }
             }
+
             .text {
                 width: calc(100% - 250px);
+
                 @media screen and (max-width: 991px) {
                     width: 100%;
                 }
+
                 .about-text-header {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     flex-wrap: wrap;
+
                     h4 {
                         @extend .sub;
                         margin: 0;
                     }
+
                     p {
                         margin: 0;
                         padding: 0;
@@ -460,11 +546,13 @@ svg path {
                 height: 100% !important;
                 width: 100% !important;
             }
+
             img {
                 width: 100%;
                 height: 100%;
                 position: relative;
                 border-radius: 8px;
+
                 @media screen and (max-width: 767px) {
                     border-bottom-left-radius: 0;
                     border-bottom-right-radius: 0;
@@ -475,6 +563,7 @@ svg path {
         .socials {
             display: flex;
             align-items: center;
+
             svg {
                 height: 32px;
                 width: 32px;
@@ -483,6 +572,7 @@ svg path {
             }
         }
     }
+
     .form {
         border: 1px solid $text-blue;
 
@@ -491,12 +581,15 @@ svg path {
         padding: 2rem;
         border-radius: 8px;
         width: 40%;
+
         @media screen and (max-width: 991px) {
             width: 55%;
         }
+
         @media screen and (max-width: 767px) {
             width: 100%;
         }
+
         .status,
         .error {
             text-align: center;
@@ -507,12 +600,14 @@ svg path {
             border-radius: 8px;
             padding: 1rem;
         }
+
         .error {
             color: red;
             border-color: red;
         }
     }
-    form > div {
+
+    form>div {
         position: relative;
         margin-bottom: 1rem;
     }
@@ -526,23 +621,28 @@ svg path {
         border: 1px solid #fff;
         transition: 250ms all ease;
         border-radius: 4px;
+
         &:focus {
             border-color: $blue;
         }
+
         // &:valid {
         //     background-color: transparent;
         //     border-color: rgba($blue, 0.5);
         // }
     }
+
     input[type="submit"] {
         margin-top: 1rem;
         @extend .btn;
         //@extend .btn.solid;
     }
+
     ::placeholder {
         color: rgba($dark-gray, 0.3);
     }
-    form > div > label {
+
+    form>div>label {
         position: absolute;
         font-size: 11px;
         top: 0.3rem;
@@ -568,13 +668,16 @@ svg path {
     background-color: $dark-gray;
 
     overflow: hidden;
+
     @media screen and (max-width: 767px) {
         height: 60vh;
     }
+
     .container {
         position: relative;
         z-index: 2;
     }
+
     .blog-blob {
         height: 100%;
         width: 100%;
@@ -584,6 +687,7 @@ svg path {
         right: 0;
         bottom: 0;
         margin: auto;
+
         @media screen and (max-width: 767px) {
             width: 800px;
             height: 800px;
@@ -592,6 +696,7 @@ svg path {
             bottom: 0;
             right: 0;
         }
+
         svg {
             z-index: 1;
             width: 100%;
@@ -610,16 +715,20 @@ svg path {
         font-size: 4rem;
         margin: 1rem 0;
         overflow: hidden;
-        > div > div {
+
+        >div>div {
             margin-left: 1rem;
             display: inline-block;
+
             &:first-of-type {
                 margin-left: 0;
             }
         }
+
         @media screen and (max-width: 991px) {
             font-size: 2.5rem;
         }
+
         span {
             display: inline-block;
             transform-origin: 0 0;
@@ -627,6 +736,7 @@ svg path {
             opacity: 0;
         }
     }
+
     .sub {
         position: relative;
     }
@@ -637,11 +747,13 @@ svg path {
         border-radius: 8px;
         max-width: 700px;
         margin: 0 auto;
+
         @media screen and (max-width: 991px) {
             padding: 2rem;
         }
     }
 }
+
 #blog-posts {
     margin: -3rem auto 5rem;
 }
@@ -652,9 +764,11 @@ svg path {
     width: 100%;
     position: relative;
     overflow: hidden;
+
     a:hover {
         color: lighten($brand-blue, 30%);
     }
+
     .blob {
         height: 100%;
         width: 50%;
@@ -662,22 +776,26 @@ svg path {
         top: 0;
         left: -10%;
         bottom: 0;
+
         @media screen and (max-width: 991px) {
             width: 300%;
             height: 100%;
             top: -10%;
             left: -120%;
         }
+
         @media screen and (max-width: 575px) {
             width: 300%;
             height: 600px;
             top: 0;
             left: -120%;
         }
+
         svg {
             z-index: 2;
             width: 100%;
             height: 100%;
+
             path {
                 fill: $text-blue;
                 fill-opacity: 0.35;
@@ -686,34 +804,42 @@ svg path {
             }
         }
     }
+
     h1,
     h2 {
         color: #fff;
         margin: 1rem 0;
     }
+
     h1 {
         font-size: 2.5rem;
     }
+
     h2 {
         font-size: 1.8rem;
         font-weight: 500;
     }
+
     .regular-text {
         margin-bottom: 2rem;
     }
+
     a#btn-0 {
         @extend .btn;
         //@extend .btn.solid;
     }
+
     .col-12 {
         height: 100%;
         padding-top: 8rem;
         padding-bottom: 6rem;
     }
+
     &.full {
         .col-12 {
             height: 100vh;
         }
+
         @media screen and (min-width: 1920px) {
             .blob {
                 top: -10%;
@@ -721,61 +847,75 @@ svg path {
             }
         }
     }
+
     .content {
         position: relative;
         z-index: 1;
         display: flex;
         margin: 8rem 0 4rem;
+
         @media screen and (max-width: 991px) {
             margin: 0;
             flex-direction: column;
             padding: 0 0 2rem;
         }
     }
+
     .text {
         width: 50%;
         padding: 5rem 3rem 5rem 0;
         z-index: 2;
         position: relative;
+
         @media screen and (max-width: 991px) {
             padding: 0;
         }
+
         @media screen and (max-width: 991px) {
             width: 100%;
             padding: 8rem 0 2rem;
         }
     }
+
     .thumbnail-gallery-caption {
         width: 50%;
+
         .gallery-image-wrapper {
             .image-wrapper {
                 height: 450px;
+
                 img {
                     object-position: top;
                 }
+
                 @media screen and (max-width: 991px) {
                     height: 250px;
                 }
             }
+
             span {
                 text-align: center;
             }
         }
+
         @media screen and (max-width: 991px) {
             width: 100%;
         }
     }
+
     .background-image {
         opacity: 0.2;
         width: 100%;
         height: 100%;
-        @media screen and (min-width: 1920px) {
-        }
+
+        @media screen and (min-width: 1920px) {}
+
         @media screen and (max-width: 991px) {
             width: 100%;
             opacity: 0.25;
             z-index: 0;
         }
+
         .gatsby-image-wrapper {
             height: 100% !important;
             width: 100% !important;
@@ -790,12 +930,15 @@ svg path {
 
 #work-body {
     margin: 3rem 0;
+
     .container {
         padding: 0 8rem;
+
         @media screen and (max-width: 991px) {
             padding: 0 2rem;
         }
     }
+
     h1,
     h2,
     h3,
@@ -803,18 +946,22 @@ svg path {
         color: $text-blue;
         margin: 2rem 0 0;
     }
+
     h3 {
         font-size: 2rem;
     }
+
     h4 {
         font-size: 1.4rem;
     }
+
     #results {
         background-color: #fff;
         border: 1px solid rgba($brand-blue, 1);
         border-radius: 8px;
         padding: 2rem;
         margin-top: 2rem;
+
         h2 {
             margin: 0;
             padding: 0;
@@ -826,6 +973,7 @@ svg path {
 #projects {
     margin: 5rem 0;
     position: relative;
+
     .project-card {
         display: flex;
         background-color: #fff;
@@ -833,17 +981,21 @@ svg path {
         border-radius: 8px;
         margin-bottom: 5rem;
         border: 1px solid #e5e5e5;
+
         .text {
             padding: 3rem;
             width: 100%;
+
             h3 {
                 font-size: 2.4rem;
                 margin: 1rem 0;
             }
+
             p {
                 margin: 0 0 1rem;
                 font-size: 1rem;
             }
+
             h4 {
                 font-family: "Jost", sans-serif;
                 font-weight: 400;
@@ -851,20 +1003,24 @@ svg path {
                 margin: 0 0 1rem;
                 line-height: 1.2;
             }
+
             h5 {
                 margin: 0;
                 color: $blue;
             }
         }
+
         .box-container {
             display: flex;
             gap: 1rem;
         }
+
         .box {
             border-radius: 8px;
             border: 1px solid #e5e5e5;
             padding: 2rem;
         }
+
         &.horizontal {
             .images {
                 padding: 3rem;
@@ -884,14 +1040,17 @@ svg path {
                     height: 100% !important;
                     cursor: zoom-in;
                     transition: opacity 250ms ease;
+
                     &:hover {
                         opacity: 0.8;
                     }
                 }
             }
         }
+
         &.vertical {
             flex-direction: column-reverse;
+
             .images {
                 background-color: rgba($blue, 0.1);
                 display: flex;
@@ -919,23 +1078,28 @@ svg path {
         height: 100%;
     }
 }
+
 .categories-wrap {
     border-left: 1px solid $light-gray;
     padding-left: 1rem;
 
     margin-top: 2rem;
-    a {
-    }
+
+    a {}
+
     ul,
     li {
         list-style-type: none;
     }
+
     @media screen and (max-width: 992px) {
         margin-bottom: 2rem;
     }
 }
+
 .search-wrapper {
     position: relative;
+
     input {
         background: rgba(#fff, 0.8);
         width: 100%;
@@ -943,6 +1107,7 @@ svg path {
         backdrop-filter: blur(20px);
         border-radius: 8px;
     }
+
     .search-icon {
         position: absolute;
         top: 0;
@@ -952,42 +1117,50 @@ svg path {
         display: flex;
         align-items: center;
     }
+
     margin-bottom: 1rem;
 }
+
 .navigation.pagination {
     h2 {
         display: none;
     }
+
     a {
         font-weight: 700;
     }
+
     .nav-links a,
     .nav-links span {
         margin: 0 0.2rem;
     }
 }
+
 #post-header {
     position: relative;
     margin-bottom: 4rem;
     height: 500px;
     display: flex;
     align-items: flex-end;
+
     .background {
         height: 500px;
         position: absolute;
         width: 100%;
         background-size: cover;
         background-color: $dark-gray;
+
         img,
         .gatsby-image-wrapper {
             height: 100%;
             width: 100%;
             object-fit: cover;
         }
-        &:before{
+
+        &:before {
             position: absolute;
             display: block;
-            content:"";
+            content: "";
             height: 100px;
             width: 100%;
             background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
@@ -1002,15 +1175,18 @@ svg path {
         &:hover {
             transition: 250ms all ease;
             color: $blue;
+
             svg {
                 fill: $blue;
             }
         }
+
         svg {
             height: 20px;
             width: 20px;
         }
     }
+
     .content {
         position: relative;
         background-color: rgba($dark-gray, 0.9);
@@ -1026,12 +1202,14 @@ svg path {
         margin-bottom: -3rem;
         overflow: hidden;
         position: relative;
+
         svg {
             width: 100%;
             height: 100%;
             left: 0;
             position: absolute;
         }
+
         .blob {
             width: 600px;
             height: 600px;
@@ -1040,12 +1218,14 @@ svg path {
             left: -25%;
             bottom: 0;
             margin: auto;
+
             @media screen and (max-width: 767px) {
                 width: 800px;
                 height: 800px;
                 top: -50%;
                 left: -50%;
             }
+
             svg {
                 z-index: 2;
                 width: 100%;
@@ -1053,12 +1233,15 @@ svg path {
                 position: absolute;
             }
         }
+
         @media screen and (max-width: 991px) {
             padding: 2rem;
         }
+
         @media screen and (max-width: 575px) {
             width: 100%;
         }
+
         h1 {
             font-size: 3rem;
             margin: 0 0 1rem;
@@ -1066,23 +1249,28 @@ svg path {
             color: #fff;
             z-index: 2;
             text-wrap: pretty;
+
             @media screen and (max-width: 575px) {
                 font-size: 2rem;
             }
         }
+
         .sub {
             color: #fff;
             z-index: 2;
         }
+
         .arrow-btn {
             z-index: 2;
         }
     }
 }
+
 .blog-content {
     padding-top: 1rem;
     margin: 0 auto;
     max-width: 1140px;
+
     .regular-text {
         color: $dark-gray;
 
@@ -1091,25 +1279,31 @@ svg path {
         h4 {
             color: $text-blue;
         }
+
         h2 {
             font-size: 2.5rem;
         }
+
         h3 {
             font-size: 2rem;
         }
+
         a {
             color: $blue;
         }
+
         h2 {
             @media screen and (max-width: 575px) {
                 font-size: 2rem;
             }
         }
+
         h3 {
             @media screen and (max-width: 575px) {
                 font-size: 1.6rem;
             }
         }
+
         figure {
             margin: 0 auto 2rem;
             background-color: #fff;
@@ -1117,53 +1311,66 @@ svg path {
             border-radius: 8px;
             padding: 1rem;
             max-width: 90%;
+
             @media screen and (max-width: 575px) {
                 padding: 0.5rem;
                 max-width: 100%;
             }
+
             img {
                 border-radius: 8px;
                 width: 100%;
                 height: auto;
                 border: 1px solid #ddd;
             }
+
             figcaption {
                 margin-top: 1rem;
                 text-wrap: pretty;
+
                 @media screen and (max-width: 575px) {
                     text-align: center;
                     font-size: 0.9rem;
                 }
             }
         }
-        table{
+
+        table {
             border-collapse: collapse;
-            tr.mobile{
-                
+
+            tr.mobile {
+
                 @media screen and (max-width: 575px) {
                     display: flex;
                     flex-direction: column;
                 }
             }
-            th,td{
-                padding:0.25rem 0.5rem;
-                border:1px solid rgba($text-blue, 0.5);
+
+            th,
+            td {
+                padding: 0.25rem 0.5rem;
+                border: 1px solid rgba($text-blue, 0.5);
+            }
         }
-        } 
+
         img {
             max-height: auto;
         }
+
         p {
             text-wrap: pretty;
         }
     }
 }
+
 #post {
     padding: 1rem 0 4rem;
+
     p {
         margin-bottom: 2rem;
     }
 }
+
 .page-404 {
     display: flex;
     align-items: center;
@@ -1173,21 +1380,26 @@ svg path {
     background-image: url("/geography.svg");
     color: #fff;
     min-height: 100vh;
+
     h1,
     h2 {
         color: #fff;
     }
+
     h2 {
         font-size: 1.8rem;
     }
+
     ul a {
         color: #fff;
         text-decoration: underline;
         font-weight: 600;
     }
+
     .row {
         padding-bottom: 3rem;
     }
+
     .post-preview {
         margin-top: 5rem;
         margin-bottom: 0;

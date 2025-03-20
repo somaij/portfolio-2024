@@ -449,13 +449,14 @@ footer {
         gap: 2rem;
         h3 {
             color: #fff;
+
         }
         p {
         }
         .btn {
             margin-top: auto;
         }
-        @media screen and (max-width: 575px) {
+        @media screen and (max-width: 991px) {
             gap: 1rem;
         }
     }
@@ -463,7 +464,10 @@ footer {
     h3 {
         font-size: 1.8rem;
         line-height: 1.2;
-        margin-bottom: 1rem;
+        margin-bottom: 0;
+                            @media screen and (max-width: 991px) {
+                font-size:1.5rem;
+            }
     }
 
     @media screen and (max-width: 991px) {
