@@ -186,8 +186,14 @@ export default function Home({ allPostsData }) {
                         <div id="hydro-row">
                             <div className="row-title">
                                 <h3>Hydro One</h3>
-                                <div className="sub">
-                                    UX/UI & Web Leadership
+                                <div className="sub-row">
+                                    <div className="sub">
+                                        UX/UI & Web Leadership
+                                    </div>
+                                    <div>
+                                        <h6>🏆 Ranked Top 10 Utility Website in E-Source's 2025 Benchmark</h6>
+                                        <p>Our work at Hydro One earned recognition in E-Source’s annual review of 100 utility websites, placing our public-facing site in the Top 10 for design quality and user experience. <a href="https://www.linkedin.com/posts/jason-somai_just-announced-the-top-performers-of-the-activity-7376330023965790208-v7d2?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAsTYMoBpu_vWR2pGNMqEivbIipW7QTvOrs" target="_blank">View details</a></p>
+                                    </div>
                                 </div>
                             </div>
 
@@ -206,7 +212,7 @@ export default function Home({ allPostsData }) {
                                     <div className="text">
                                         <h3>Energizing Life Everyday</h3>
                                         <div className="sub">
-                                            Heatmaps & Design
+                                            Increased page engagement by 10% and ASD by 5%
                                         </div>
                                     </div>
                                     <span className="btn outline white">
@@ -226,7 +232,7 @@ export default function Home({ allPostsData }) {
                                     </div>
                                     <div className="text">
                                         <h3>Sustainability</h3>
-                                        <div className="sub">UX Research</div>
+                                        <div className="sub">Pages per session up 44% and downloads incrased by 34%</div>
                                     </div>
                                     <span className="btn outline white">
                                         Learn More
@@ -246,7 +252,7 @@ export default function Home({ allPostsData }) {
                                     <div className="text">
                                         <h3>Power to Give</h3>
                                         <div className="sub">
-                                            UX/UI & Conversions
+                                            Incrased donations by 14%
                                         </div>
                                     </div>
                                     <span className="btn outline white">
