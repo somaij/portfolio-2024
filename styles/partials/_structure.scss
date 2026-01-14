@@ -32,6 +32,10 @@ body {
     background: #fbfcff;
 }
 
+p.no-margin {
+    margin: 0 !important;
+}
+
 main {
     flex: 1 0 auto;
 }
@@ -196,6 +200,16 @@ footer {
     }
 }
 
+blockquote {
+    border-left: 4px solid $brand-blue;
+    margin: 1rem 0;
+    padding-left: 1rem;
+    color: $dark-gray;
+    em{
+        font-size:1.4rem;
+    }
+}
+
 .sub {
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -216,7 +230,11 @@ footer {
             width: 75px;
         }
     }
+    &.no-margin {
+        margin: 0 !important;
+    }
 }
+
 
 .btn {
     font-size: 0.8rem;
@@ -359,6 +377,17 @@ footer {
     }
 }
 
+.text-icon{
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+
+    svg{
+        width:24px;
+        height:24px;
+    }
+}
+
 .btn-group {
     display: flex;
     gap: 1rem;
@@ -375,7 +404,7 @@ footer {
     font-size: 0.7rem;
     padding: 0.25rem 0.75rem;
     border-radius: 50px;
-    border: 1px solid $dark-gray;
+    // border: 1px solid $dark-gray;
 }
 
 #post {
@@ -744,6 +773,7 @@ footer {
     }
     @media screen and (max-width: 991px) {
         flex-direction: column;
+        gap:1rem;
         .text,
         .thumbnail-gallery-caption {
             width: 100%;
@@ -827,6 +857,34 @@ footer {
                     opacity: 0.8;
                 }
             }
+            &.tall {
+                height: 450px;
+
+            }
+            &.object-top{
+                img{
+                    object-position: top;
+                }
+            }
+            &.tag::before{
+                position: absolute;
+                top: 1rem;
+                left: 1rem;
+                background-color: rgba($dark-gray, 0.9);
+                color: #fff;
+                padding: 0.25rem 0.75rem;
+                border-radius: 50px;
+                @extend .sub;
+                font-size: 0.7rem;
+                z-index: 2;
+                
+            }
+            &.tag-before::before{
+                    content: "Before";
+                }
+                &.tag-after::before{
+                    content: "After";
+                }
         }
         span {
             margin-top: 1rem;
@@ -929,4 +987,17 @@ a.lightbox-link {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.text-well{
+    border:1px solid #e5e5e5;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+}
+
+.text-well-lg{
+    border:1px solid $text-blue;
+    padding: 2rem 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
 }

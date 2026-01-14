@@ -199,6 +199,25 @@ export default function Home({ allPostsData }) {
 
                             <div className="work-row">
                                 <Link
+                                    href="work/tree-trimming"
+                                    className="work-preview"
+                                >
+                                    <div className="image">
+                                        <Image
+                                            src="/images/pexels-karola-g-4206118.jpg"
+                                            fill
+                                            style={{ objectFit: "cover" }}
+                                        />
+                                    </div>
+                                    <div className="text">
+                                        <h3>Tree Trimming Redesign</h3>
+                                        <p className="no-margin">Service page redesign. Rage clicks <strong>down by 40%</strong>. Reduced quick backs <strong>by 66%</strong>.</p>
+                                    </div>
+                                    <span className="btn outline white">
+                                        Learn More
+                                    </span>
+                                </Link>
+                                <Link
                                     href="work/energizing-life-everyday-local"
                                     className="work-preview"
                                 >
@@ -211,9 +230,9 @@ export default function Home({ allPostsData }) {
                                     </div>
                                     <div className="text">
                                         <h3>Energizing Life Everyday</h3>
-                                        <div className="sub">
-                                            Increased page engagement by 10% and ASD by 5%
-                                        </div>
+                                        <p className="no-margin">
+                                            Marketing campaign landing page. Increased page engagement <strong>by 10%</strong> and ASD <strong>by 5%</strong>.
+                                        </p>
                                     </div>
                                     <span className="btn outline white">
                                         Learn More
@@ -232,7 +251,7 @@ export default function Home({ allPostsData }) {
                                     </div>
                                     <div className="text">
                                         <h3>Sustainability</h3>
-                                        <div className="sub">Pages per session up 44% and downloads incrased by 34%</div>
+                                        <p className="no-margin">Report download page. Pages per session up 44% and downloads increased by 34%</p>
                                     </div>
                                     <span className="btn outline white">
                                         Learn More
@@ -251,9 +270,7 @@ export default function Home({ allPostsData }) {
                                     </div>
                                     <div className="text">
                                         <h3>Power to Give</h3>
-                                        <div className="sub">
-                                            Incrased donations by 14%
-                                        </div>
+                                        <p className="no-margin">Internal communications page. Increased donations <strong>by 14%</strong></p>
                                     </div>
                                     <span className="btn outline white">
                                         Learn More
