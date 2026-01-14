@@ -57,15 +57,23 @@ export default function Home({ allPostsData }) {
                 ],
             }),
             anime({
-                targets: "#masthead h1",
+                targets: "#masthead .masthead-header h1",
                 duration: 3000,
-                translateY: 10,
+                translateY: 8,
                 opacity: 1,
+                delay: 500,
+            }),
+            anime({
+                targets: "#masthead .masthead-header p",
+                duration: 3000,
+                translateY: -8,
+                opacity: 1,
+                delay: 1000,
             }),
             anime({
                 targets: "#masthead .masthead-header .sub",
                 duration: 3000,
-                translateY: -10,
+                translateY: -8,
                 opacity: 1,
             });
         anime({
@@ -176,8 +184,9 @@ export default function Home({ allPostsData }) {
                 </div>
                 <div className="container">
                     <div className="masthead-header">
-                        <div className="sub">Design and Dev Leader</div>
-                        <h1>Creating simplicity</h1>
+                        <div className="sub">Jason Somai is a</div>
+                        <h1>Product Designer & Developer</h1>
+                        <p>Building accessible, data-driven experiences at scale. Based in Toronto.</p>
                     </div>
                 </div>
                 <div className="container">
@@ -210,8 +219,8 @@ export default function Home({ allPostsData }) {
                                         />
                                     </div>
                                     <div className="text">
-                                        <h3>Tree Trimming Redesign</h3>
-                                        <p className="no-margin">Service page redesign. Rage clicks <strong>down by 40%</strong>. Reduced quick backs <strong>by 66%</strong>.</p>
+                                        <h3>Tree Trimming Eligibility Tool</h3>
+                                        <p className="no-margin">Reducing User Frustration by 40%. Redesigned a confusing eligibility form into an interactive, self-service tool.</p>
                                     </div>
                                     <span className="btn outline white">
                                         Learn More
@@ -251,7 +260,7 @@ export default function Home({ allPostsData }) {
                                     </div>
                                     <div className="text">
                                         <h3>Sustainability</h3>
-                                        <p className="no-margin">Report download page. Pages per session up 44% and downloads increased by 34%</p>
+                                        <p className="no-margin">Report download page. Pages per session up 44% and downloads increased by 34%.</p>
                                     </div>
                                     <span className="btn outline white">
                                         Learn More
@@ -270,7 +279,7 @@ export default function Home({ allPostsData }) {
                                     </div>
                                     <div className="text">
                                         <h3>Power to Give</h3>
-                                        <p className="no-margin">Internal communications page. Increased donations <strong>by 14%</strong></p>
+                                        <p className="no-margin">Internal communications page. Increased donations <strong>by 14%</strong>.</p>
                                     </div>
                                     <span className="btn outline white">
                                         Learn More
@@ -462,8 +471,11 @@ export default function Home({ allPostsData }) {
                                         One’s website, where I get to lead a
                                         talented team in creating web
                                         experiences that make a real
-                                        difference—helping Ontarians save on
-                                        energy, access grants, and stay informed
+                                        difference. I help Ontarians save on
+                                        energy, access grants, perform the <Link
+                                        href="/work/tree-trimming"
+                                        target="_blank"
+                                    >services they need to do</Link> and stay informed
                                         on our role in the energy transition.
                                     </p>
                                 </div>
@@ -492,16 +504,15 @@ export default function Home({ allPostsData }) {
                                 <p>
                                     I’m constantly exploring new ways to grow my
                                     skills, whether through side projects, like
-                                    this site, or the Brainstation UX course I
+                                    this <Link
+                                        href="/posts/kh-bbs-meld-simulator"
+                                        target="_blank"
+                                    >Kingdom Hearts fan site</Link> I built, or the Brainstation UX course I
                                     took in 2018, which continues to shape how I
                                     approach design and usability.
                                 </p>
                                 <p>
-                                    Beyond work, I’m a car enthusiast with a
-                                    Cornflower Blue Golf GTI, driven by a love
-                                    for performance and design. I’m also an avid
-                                    gamer, inspired by immersive storytelling
-                                    and design, and I explore Toronto’s eclectic
+                                    Outside of the craft I’m a car enthusiast with a GTI. I also love to travel (<em>real original</em>, but I just learnt that Europe is awesome so cut me some slack!) and I explore Toronto’s eclectic
                                     architecture to fuel fresh creative ideas.
                                 </p>
                             </div>

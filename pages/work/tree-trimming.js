@@ -197,8 +197,8 @@ export default function TreeTrimming() {
                         
                                 <div className="text-icon">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M20 7H4C2.89543 7 2 7.89543 2 9V19C2 20.1046 2.89543 21 4 21H20C21.1046 21 22 20.1046 22 19V9C22 7.89543 21.1046 7 20 7Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M16 21V5C16 4.46957 15.7893 3.96086 15.4142 3.58579C15.0391 3.21071 14.5304 3 14 3H10C9.46957 3 8.96086 3.21071 8.58579 3.58579C8.21071 3.96086 8 4.46957 8 5V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 7H4C2.89543 7 2 7.89543 2 9V19C2 20.1046 2.89543 21 4 21H20C21.1046 21 22 20.1046 22 19V9C22 7.89543 21.1046 7 20 7Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M16 21V5C16 4.46957 15.7893 3.96086 15.4142 3.58579C15.0391 3.21071 14.5304 3 14 3H10C9.46957 3 8.96086 3.21071 8.58579 3.58579C8.21071 3.96086 8 4.46957 8 5V21" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 </svg>
 
                                     <strong>Business Impact</strong>
@@ -211,10 +211,10 @@ export default function TreeTrimming() {
 
                                     <div className="text-icon">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M16 16C16 16 14.5 14 12 14C9.5 14 8 16 8 16" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M9 9H9.01" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M15 9H15.01" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M16 16C16 16 14.5 14 12 14C9.5 14 8 16 8 16" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M9 9H9.01" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M15 9H15.01" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 </svg>
 
                                         <strong>User Pain Points</strong>
@@ -226,8 +226,8 @@ export default function TreeTrimming() {
                                 </ul>
                                 <div className="text-icon">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M3 3L10.07 19.97L12.58 12.58L19.97 10.07L3 3Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M13 13L19 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 3L10.07 19.97L12.58 12.58L19.97 10.07L3 3Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M13 13L19 19" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 </svg>
 
                                     <strong>The Challenge</strong></div>
@@ -467,8 +467,8 @@ export default function TreeTrimming() {
         <div className="text-icon">
             <div>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18 6L6 18" stroke="#FF5959" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M6 6L18 18" stroke="#FF5959" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 6L6 18" stroke="#FF5959" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M6 6L18 18" stroke="#FF5959" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
             </div>
 <span>
@@ -481,27 +481,27 @@ export default function TreeTrimming() {
         <p>
 <div className="text-icon"><div>
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M18 6L6 18" stroke="#FF5959" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M6 6L18 18" stroke="#FF5959" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M18 6L6 18" stroke="#FF5959" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M6 6L18 18" stroke="#FF5959" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
 </div>Users initially missed the answer buttons—they didn't look like standard buttons</div>
 
             <div className="text-icon"><div>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18 6L6 18" stroke="#FF5959" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M6 6L18 18" stroke="#FF5959" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 6L6 18" stroke="#FF5959" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M6 6L18 18" stroke="#FF5959" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
             </div>Users tried to click numbered circles on the diagram (they weren't interactive)</div>
             <div className="text-icon"><div>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18 6L6 18" stroke="#FF5959" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M6 6L18 18" stroke="#FF5959" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 6L6 18" stroke="#FF5959" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M6 6L18 18" stroke="#FF5959" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
             </div>Required expanding accordions to understand each scenario</div>
             <div className="text-icon"><div>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18 6L6 18" stroke="#FF5959" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M6 6L18 18" stroke="#FF5959" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 6L6 18" stroke="#FF5959" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M6 6L18 18" stroke="#FF5959" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
             </div>Decision-making was backwards: "Which one gets them to come?" instead of "Which one matches my situation?"</div>
             </p>
@@ -666,22 +666,22 @@ export default function TreeTrimming() {
                                 <p>
 <div className="text-icon"><div>
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M20 6L9 17L4 12" stroke="#00B72E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M20 6L9 17L4 12" stroke="#00B72E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
 </div>100% task completion rate</div>
 <div className="text-icon"><div>
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M20 6L9 17L4 12" stroke="#00B72E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M20 6L9 17L4 12" stroke="#00B72E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
 </div>Users successfully identified their scenario</div>
 <div className="text-icon"><div>
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M20 6L9 17L4 12" stroke="#00B72E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M20 6L9 17L4 12" stroke="#00B72E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
 </div>No confusion about eligibility</div>
 <div className="text-icon"><div>
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M20 6L9 17L4 12" stroke="#00B72E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M20 6L9 17L4 12" stroke="#00B72E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
 </div>Positive feedback: "Oh, I can click these! That's helpful."</div>
         
@@ -693,8 +693,8 @@ export default function TreeTrimming() {
                     <section>
 
                         <h3>Design + Development</h3>
-                        <p>I designed and built this solution end-to-end.</p>
-                        <p>This allowed rapid iteration—I could test interactions in the browser same-day, make changes based on feedback immediately, and ensure implementation matched design intent.</p>
+                        <p>We designed and built this solution end-to-end.</p>
+                        <p>This allowed rapid iteration. I was able to test interactions in the browser same-day, make changes based on feedback immediately, and ensure implementation matched design intent.</p>
                         <p>Built with: JavaScript, HTML5, CSS3.</p>
                         <p>Accessibility: WCAG 2.1 AA (keyboard nav, ARIA labels, screen reader support)</p>
                     </section>
@@ -709,7 +709,7 @@ export default function TreeTrimming() {
                                     </div>
                                     <div className="stat">
                                         <div className="num">40%</div>
-                                        <div className="label">reduction in rage clicks. Dead click rate: 29% → 17% of sessions</div>
+                                        <div className="label">reduction in rage clicks. Rage click rate: 0.65% → 0.39% of sessions</div>
                                     </div>
                                     <div className="stat">
                                         <div className="num">66%</div>
