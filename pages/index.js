@@ -227,6 +227,25 @@ export default function Home({ allPostsData }) {
                                     </span>
                                 </Link>
                                 <Link
+                                    href="work/el-fund"
+                                    className="work-preview"
+                                >
+                                    <div className="image">
+                                        <Image
+                                            src="/images/the-tampa-bay-estuary-program-CxL29J-aM5E-unsplash.jpg"
+                                            fill
+                                            style={{ objectFit: "cover" }}
+                                        />
+                                    </div>
+                                    <div className="text">
+                                        <h3>Energizing Life Community Fund</h3>
+                                        <p className="no-margin">56% engagement rate, 44% bounce rate. Consistent high performance over 4 years. 6.4x increase in applications.</p>
+                                    </div>
+                                    <span className="btn outline white">
+                                        Learn More
+                                    </span>
+                                </Link>
+                                <Link
                                     href="work/energizing-life-everyday-local"
                                     className="work-preview"
                                 >
@@ -266,25 +285,7 @@ export default function Home({ allPostsData }) {
                                         Learn More
                                     </span>
                                 </Link>
-                                <Link
-                                    href="work/power-to-give"
-                                    className="work-preview"
-                                >
-                                    <div className="image">
-                                        <Image
-                                            src="/images/pexels-julia-m-cameron-6994833.jpg"
-                                            fill
-                                            style={{ objectFit: "cover" }}
-                                        />
-                                    </div>
-                                    <div className="text">
-                                        <h3>Power to Give</h3>
-                                        <p className="no-margin">Internal communications page. Increased donations <strong>by 14%</strong>.</p>
-                                    </div>
-                                    <span className="btn outline white">
-                                        Learn More
-                                    </span>
-                                </Link>
+
                             </div>
                         </div>
                         <div className="second-row">

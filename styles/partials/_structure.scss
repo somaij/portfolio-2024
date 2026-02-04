@@ -866,6 +866,17 @@ blockquote {
                     object-position: top;
                 }
             }
+            &.object-left{
+                img{
+                    object-position: left;
+                }
+            }
+            &.object-right{
+                img{
+                    object-position: right;
+                }
+            }
+
             &.tag::before{
                 position: absolute;
                 top: 1rem;
@@ -993,6 +1004,10 @@ a.lightbox-link {
     border:1px solid #e5e5e5;
     padding: 1rem 1.5rem;
     border-radius: 8px;
+    h3,h4{
+        margin-top:1rem !important;
+        padding-top:0;
+    }
 }
 
 .text-well-lg{
@@ -1000,4 +1015,8 @@ a.lightbox-link {
     padding: 2rem 2rem;
     border-radius: 8px;
     margin: 2rem 0;
+    h3,h4{
+        margin-top:1rem !important;
+        padding-top:0;
+    }
 }
