@@ -200,8 +200,8 @@ export default function Home({ allPostsData }) {
                                         UX/UI & Web Leadership
                                     </div>
                                     <div>
-                                        <h6>🏆 Ranked Top 10 Utility Website in E-Source's 2025 Benchmark</h6>
-                                        <p>Our work at Hydro One earned recognition in E-Source’s annual review of 100 utility websites, placing our public-facing site in the Top 10 for design quality and user experience. <a href="https://www.linkedin.com/posts/jason-somai_just-announced-the-top-performers-of-the-activity-7376330023965790208-v7d2?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAsTYMoBpu_vWR2pGNMqEivbIipW7QTvOrs" target="_blank">View details</a></p>
+                                        <h6>🏆 Ranked #7 best Utility Website in E-Source's 2025 Benchmark</h6>
+                                        <p>Our work at Hydro One earned recognition in E-Source’s annual review of 100 utility websites, placing our public-facing site as #7 for design quality and user experience. <a href="https://www.linkedin.com/posts/jason-somai_just-announced-the-top-performers-of-the-activity-7376330023965790208-v7d2?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAsTYMoBpu_vWR2pGNMqEivbIipW7QTvOrs" target="_blank">View details</a></p>
                                     </div>
                                 </div>
                             </div>
