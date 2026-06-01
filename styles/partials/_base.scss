@@ -118,7 +118,7 @@ svg path {
 
         @media screen and (max-width: 575px) {
             font-size: 2.2rem;
-            margin-bottom: 0;
+            margin-bottom: 0.75rem;
         }
     }
 
@@ -131,11 +131,12 @@ svg path {
         }
         p{
             opacity: 0;
+            margin-top:2rem;
         }
 
-        // @media screen and (max-width: 575px) {
-        //     padding: 12rem 0 3rem;
-        // }
+        @media screen and (max-width: 767px) {
+            margin: 3rem auto;
+        }
     }
 
     .sub {
@@ -220,6 +221,10 @@ svg path {
 
                 .sub {
                     min-width: 250px;
+
+                    @media screen and (max-width: 575px) {
+                        min-width: unset;
+                    }
                 }
 
                 p {
@@ -236,8 +241,7 @@ svg path {
 
                 @media screen and (max-width: 991px) {
                     flex-direction: column;
-                    gap: 0.5rem;
-
+                    gap: 1rem;
                 }
             }
 
@@ -258,7 +262,7 @@ svg path {
                 height: 255px;
 
                 @media screen and (max-width: 991px) {
-                    height: 250px;
+                    height: auto;
 
                     &:before {
                         background: linear-gradient(255.43deg,
@@ -272,6 +276,7 @@ svg path {
             @media screen and (max-width: 991px) {
                 gap: 1rem;
                 flex-direction: column;
+                grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
             }
         }
     }
@@ -1681,5 +1686,238 @@ svg path {
     .post-preview {
         margin-top: 5rem;
         margin-bottom: 0;
+    }
+}
+
+/* Blog Index Page */
+#blog-index-page {
+    #blog-index-header {
+        background-color: $dark-gray;
+        padding: 8rem 0 6rem;
+        color: #fff;
+        position: relative;
+        overflow: hidden;
+
+        .container {
+            position: relative;
+            z-index: 3;
+        }
+
+        .blog-blob {
+            position: absolute;
+            width: 700px;
+            height: 700px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            svg {
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+            }
+        }
+
+        .sub {
+            color: rgba(#fff, 0.5);
+        }
+
+        h1 {
+            color: #fff;
+            margin: 0.5rem 0;
+            font-size: 4rem;
+        }
+
+        p {
+            color: rgba(#fff, 0.7);
+            margin: 0;
+            font-size: 1.1rem;
+        }
+    }
+
+    #blog-index-body {
+        background-color: $dark-gray;
+        padding: 0 0 6rem;
+
+        .container {
+            position: relative;
+        }
+
+        .cardWrapper {
+            flex-wrap: wrap;
+
+            .post-preview {
+                flex: 1 1 calc(33% - 1.5rem);
+                min-width: 280px;
+            }
+        }
+    }
+}
+
+/* Work Index Page */
+#work-index-page {
+    #work-index-header {
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(216.63deg, $dark-blue 21.32%, $brand-blue 78.68%);
+        padding: 8rem 0 4rem;
+        color: #fff;
+
+        .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        #header-background {
+            .work-index-blob {
+                width: 200%;
+                height: 1200px;
+                left: -70%;
+                top: 50%;
+                right:unset;
+                transform: translateY(-50%);
+            }
+        }
+
+        .sub {
+            color: rgba(#fff, 0.7);
+        }
+
+        h1 {
+            color: #fff;
+            margin: 0.5rem 0;
+            font-size: 4rem;
+        }
+
+        p {
+            color: rgba(#fff, 0.85);
+            margin: 0;
+            font-size: 1.1rem;
+        }
+    }
+
+    #work-index-body {
+        padding: 4rem 0 6rem;
+
+        .container {
+            position: relative;
+        }
+    }
+
+    #work-index-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+
+        @media screen and (max-width: 767px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .work-index-card {
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid #e8e8e8;
+        background: #fff;
+        transition: 250ms all ease;
+        color: $dark-gray;
+
+        &:hover {
+            box-shadow: 0 8px 40px rgba(#000, 0.1);
+            transform: translateY(-2px);
+            text-decoration: none;
+
+            .btn.outline {
+                background-color: $blue;
+                color: #fff;
+            }
+        }
+
+        .work-index-card-image {
+            position: relative;
+            height: 240px;
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        .work-index-card-body {
+            padding: 1.75rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            flex: 1;
+
+            .tag {
+                @extend .sub;
+                font-size: 0.7rem;
+                color: $blue;
+                border: 1px solid $blue;
+                width: fit-content;
+            }
+
+            h3 {
+                font-size: 1.6rem;
+                margin: 0;
+                color: $dark-gray;
+            }
+
+            p {
+                margin: 0;
+                color: $light-gray;
+                font-size: 0.95rem;
+                flex: 1;
+            }
+
+            .btn {
+                margin-top: 0.5rem;
+                width: fit-content;
+            }
+        }
+
+        &.work-index-text-card {
+            background: $dark-gray;
+
+            .work-index-card-body {
+                .tag {
+                    color: rgba(#fff, 0.5);
+                    border-color: rgba(#fff, 0.5);
+                }
+
+                h3 {
+                    color: #fff;
+                }
+
+                p {
+                    color: rgba(#fff, 0.7);
+                }
+            }
+
+            .ferraz-links {
+                display: flex;
+                flex-direction: column;
+                gap: 0.25rem;
+                margin-top: 0.5rem;
+
+                a {
+                    color: #fff;
+                    text-decoration: underline;
+                    font-weight: 600;
+                    font-size: 0.95rem;
+                    padding-bottom: 0.25rem;
+                    border-bottom: 1px solid rgba(#fff, 0.15);
+
+                    &:last-of-type {
+                        border-bottom: none;
+                    }
+
+                    &:hover {
+                        color: $brand-blue;
+                    }
+                }
+            }
+        }
     }
 }

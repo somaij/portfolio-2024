@@ -37,8 +37,8 @@ export default function Layout({ children, home }) {
                             <Link href="/">Jason Somai</Link>
                         </div>
                         <div className="menu">
-                            <Link href="/#home-blog">Blog</Link>
-                            <Link href="/#home-work">Work</Link>
+                            <Link href="/blog">Blog</Link>
+                            <Link href="/work">Work</Link>
                         </div>
                     </nav>
                 }

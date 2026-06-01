@@ -91,7 +91,7 @@ export default function TreeTrimming() {
                     <div className="content">
                         <div className="text">
                             <Link
-                                href="/#home-work"
+                                href="/work"
                                 className="arrow-btn white reverse"
                                 title="All Work"
                             >

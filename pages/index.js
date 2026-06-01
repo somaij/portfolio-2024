@@ -1,4 +1,4 @@
-import Head from "next/head";
+﻿import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
@@ -185,8 +185,8 @@ export default function Home({ allPostsData }) {
                 <div className="container">
                     <div className="masthead-header">
                         <div className="sub">Jason Somai is a</div>
-                        <h1>Product Designer & Developer</h1>
-                        <p>Building accessible, data-driven experiences at scale. Based in Toronto.</p>
+                        <h1>Product Designer who designs and ships.</h1>
+                        <p>From early research to production-ready code. Toronto.</p>
                     </div>
                 </div>
                 <div className="container">
@@ -197,7 +197,7 @@ export default function Home({ allPostsData }) {
                                 <h3>Hydro One</h3>
                                 <div className="sub-row">
                                     <div className="sub">
-                                        UX/UI & Web Leadership
+                                        Design & Web Leadership
                                     </div>
                                     <div>
                                         <h6>🏆 Ranked #7 best Utility Website in E-Source's 2025 Benchmark</h6>
@@ -468,53 +468,21 @@ export default function Home({ allPostsData }) {
                                         </div>
                                     </div>
                                     <p>
-                                        Hi, I’m Jason, Digital Manager for Hydro
-                                        One’s website, where I get to lead a
-                                        talented team in creating web
-                                        experiences that make a real
-                                        difference. I help Ontarians save on
-                                        energy, access grants, perform the <Link
-                                        href="/work/tree-trimming"
-                                        target="_blank"
-                                    >services they need to do</Link> and stay informed
-                                        on our role in the energy transition.
+                                        I'm a product designer with a developer's instinct — I prototype in the browser, write production HTML/CSS/JS, and care what happens after launch. My process runs the full arc: UX research, design, implementation, and behavioral analytics to measure what actually changed.
                                     </p>
                                 </div>
                             </div>
                             <div className="bottom-content">
                                 <p>
-                                    From 2018 to 2022 I was 
-                                    <Link
-                                        href="https://www.ferrazcreative.com/"
-                                        target="_blank"
-                                    >
-                                        Ferraz Creative's
-                                    </Link>
-                                     Senior Developer, I brought imaginative
-                                    concepts to life with my mentor, Andre,
-                                    including building the{" "}
-                                    <Link
-                                        href="https://workhaus.ca/"
-                                        target="_blank"
-                                    >
-                                        Workhaus WordPress website
-                                    </Link>{" "}
-                                    from scratch and implementing ACF for easy
-                                    content management.
+                                    At Hydro One I've spent four years leading design and development for Ontario's largest utility — building everything from a company-wide design system to self-service customer tools. Work my team shipped helped us rank #7 of 94 utility websites in North America, and #1 in Canada, in E-Source's 2025 benchmark.
                                 </p>
                                 <p>
-                                    I’m constantly exploring new ways to grow my
-                                    skills, whether through side projects, like
-                                    this <Link
-                                        href="/posts/kh-bbs-meld-simulator"
-                                        target="_blank"
-                                    >Kingdom Hearts fan site</Link> I built, or the Brainstation UX course I
-                                    took in 2018, which continues to shape how I
-                                    approach design and usability.
+                                    I build things on my own time too. Right now that's Tally, a golf-scoring Android app, and a{" "}
+                                    <Link href="/posts/kh-bbs-meld-simulator" target="_blank">Kingdom Hearts fan tool</Link>
+                                    {" "}I designed, shipped, and grew to 34k impressions through my own SEO. I like owning the whole arc.
                                 </p>
                                 <p>
-                                    Outside of the craft I’m a car enthusiast with a GTI. I also love to travel (<em>real original</em>, but I just learnt that Europe is awesome so cut me some slack!) and I explore Toronto’s eclectic
-                                    architecture to fuel fresh creative ideas.
+                                    Off the screen: a Golf GTI, traveling to as many beaches as I can see, and good times with friends and family.
                                 </p>
                             </div>
                         </div>
