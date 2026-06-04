@@ -925,6 +925,11 @@ svg path {
             }
         }
 
+        &.tall-images .gallery-image-wrapper .image-wrapper {
+            height: auto;
+            aspect-ratio: 824 / 1464;
+        }
+
         @media screen and (max-width: 991px) {
             width: 100%;
         }
@@ -1084,14 +1089,14 @@ svg path {
     .black-background {
         background-color: $dark-gray;
         padding: 4rem 0;
-
+        
         h2,
         h3,
         h4,
         p,
         ul,
         ol,
-        blockquote {
+        blockquote, strong {
             color: #fff;
         }
     }

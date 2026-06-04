@@ -7,6 +7,13 @@ import { useEffect } from "react";
 
 const projects = [
     {
+        href: "work/tally",
+        image: "/images/tally-bg.jpg",
+        title: "Tally",
+        description: "Golf scoring for the golfer who just wants to play. Android + Wear OS app designed and built solo.",
+        tag: "Personal Project",
+    },
+    {
         href: "work/tree-trimming",
         image: "/images/pexels-karola-g-4206118.jpg",
         title: "Tree Trimming Eligibility Tool",

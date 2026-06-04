@@ -780,6 +780,19 @@ blockquote {
         }
     }
 }
+.four-col-text {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    .text {
+        width: calc(50% - 0.5rem);
+    }
+    @media screen and (max-width: 575px) {
+        .text {
+            width: 100%;
+        }
+    }
+}
 .three-col-image-text {
     display: flex;
     gap: 2%;
@@ -802,7 +815,7 @@ blockquote {
 .thumbnail-gallery-caption {
     display: flex;
     flex-wrap: wrap;
-    gap: 1%;
+    gap: 1rem;
     &.one-col {
         .gallery-image-wrapper {
             width: 100%;
@@ -810,7 +823,7 @@ blockquote {
     }
     &.two-col {
         .gallery-image-wrapper {
-            width: 49%;
+            width: calc(50% - 0.5rem);
             @media screen and (max-width: 767px) {
                 width: 100%;
             }
@@ -818,9 +831,15 @@ blockquote {
     }
     &.three-col {
         .gallery-image-wrapper {
-            width: 32%;
+            width: calc(33.33% - 0.667rem);
             @media screen and (max-width: 767px) {
                 width: 100%;
+            }
+            .image-wrapper {
+                height: 420px;
+                @media screen and (max-width: 767px) {
+                    height: 300px;
+                }
             }
         }
     }
@@ -830,6 +849,15 @@ blockquote {
             border: 1px solid #ccc;
             border-radius: 8px;
             padding: 1rem;
+        }
+        &.tight .gallery-image-wrapper {
+            padding: 0;
+            max-width: 280px;
+            margin: 0 auto;
+            span {
+                display: block;
+                padding: 0.75rem 1rem;
+            }
         }
         img {
             border: 1px solid #ddd;
@@ -859,7 +887,10 @@ blockquote {
             }
             &.tall {
                 height: 450px;
-
+            }
+            &.phone-aspect {
+                height: auto;
+                aspect-ratio: 824 / 1464;
             }
             &.object-top{
                 img{
