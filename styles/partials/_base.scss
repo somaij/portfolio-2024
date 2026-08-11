@@ -71,564 +71,536 @@ svg path {
     }
 }
 
-#masthead {
-    position: relative;
-    // overflow: hidden;
-    height: auto;
-    background-position: top left;
-    background: linear-gradient(216.63deg, $dark-blue 21.32%, $brand-blue 78.68%);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem;
+/* ---------- Homepage ---------- */
 
-    .container {
+#home {
+    position: relative;
+    background-color: $navy;
+    background: linear-gradient(200deg, #00171F 0%, rgba(0, 23, 102, 0.50) 100%), #00171F;
+    overflow-x: clip;
+    color: #fff;
+    
+
+    >section .container {
         position: relative;
+        z-index: 1;
     }
 
-    h1 {
-        font-size: 4rem;
-        line-height: 1;
+    // 576, not 575 — at exactly 575px this and the `max-width: 575px`
+    // rules elsewhere both applied.
+    @media screen and (min-width: 576px) {
+        padding: 0 1.6rem;
+    }
+}
+
+.home-blobs {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+
+    // #home's horizontal padding is part of its padding box, so `inset: 0`
+    // stopped the blob layer short of the viewport edge and left a strip of
+    // bare gradient down each side. Bleed back out over it.
+    @media screen and (min-width: 576px) {
+        margin: 0 -1.6rem;
+    }
+
+    .home-blob {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    // Kept low — these read as tonal shifts on the navy, not as coloured shapes
+    .blob-1 {
+        width: 150vw;
+        top: -5vw;
+        opacity: 0.5;
+
+        path {
+            fill: $text-blue;
+        }
+    }
+
+    .blob-2 {
+        width: 200vw;
+        top: -15vw;
+        opacity: 0.16;
+
+        path {
+            fill: $dark-blue;
+        }
+    }
+
+    .blob-3 {
+        width: 250vw;
+        top:-25vw;
+        opacity: 0.1;
+
+        path {
+            fill: $medium-blue;
+        }
+    }
+
+    // The blobs are square (500x500 viewBox), so a vw width also caps their
+    // height — on a ~5700px tall phone page that leaves everything below the
+    // work cards flat navy. Scale up and stagger down the page by percentage
+    // of page height instead. Heavy horizontal cropping is intentional: it
+    // turns each blob into a broad arc sweeping across the viewport.
+    @media screen and (max-width: 767px) {
+
+        .blob-1 {
+            position: fixed;
+            top: 10vh;
+            width: 100vh;
+        }
+
+        .blob-2 {
+            position: fixed;
+            top: 15vh;
+            width: 100vh;   
+        }
+
+        .blob-3 {
+            position: fixed;
+            top: 20vh;
+            width: 100vh;
+        }
+    }
+}
+
+.section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 3rem;
+
+    h2 {
+        margin: 0;
         color: #fff;
-        margin-bottom: 3rem;
-        margin-top: 0;
-        opacity: 0;
-
-        >div>div {
-            margin-left: 1rem;
-            display: inline-block;
-
-            &:first-of-type {
-                margin-left: 0;
-            }
-        }
-
-        span {
-            display: inline-block;
-            transform-origin: 0 0;
-            will-change: transform;
-            opacity: 0;
-        }
-
-        @media screen and (max-width: 991px) {
-            font-size: 3rem;
-        }
 
         @media screen and (max-width: 575px) {
             font-size: 2.2rem;
-            margin-bottom: 0.75rem;
+        }
+    }
+
+    // Below ~400px "Selected work" was wrapping to two lines and colliding
+    // with the link. Let the link drop to its own row instead.
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+
+    .arrow-btn {
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    @media screen and (max-width: 575px) {
+        margin-bottom: 2rem;
+    }
+}
+
+#masthead {
+    position: relative;
+    padding: 4.8rem 0;
+
+    h1 {
+        // Same 1.8rem floor and 2.4rem ceiling as before, but ramped across
+        // the range instead of jumping at a single breakpoint.
+        font-size: clamp(1.8rem, 1.1rem + 2.2vw, 2.4rem);
+        line-height: 1.1;
+        color: #fff;
+        max-width: 60ch;
+        margin: 0.4rem 0 2.5rem;
+        opacity: 0;
+
+        @media screen and (max-width: 575px) {
+            margin-bottom: 1.75rem;
         }
     }
 
     .masthead-header {
-        margin: 5rem auto;
-        text-align: center;
+        margin: 4rem 0 2rem;
 
         .sub {
+            color: rgba(#fff, 0.8);
             opacity: 0;
         }
-        p{
-            opacity: 0;
-            margin-top:2rem;
+
+        // These used to grow as the screen shrank (6rem/5rem vs 4rem on
+        // desktop), which pushed the hero down on the smallest screens.
+        @media screen and (max-width: 991px) {
+            margin: 3rem 0 2rem;
         }
 
         @media screen and (max-width: 767px) {
-            margin: 3rem auto;
+            margin: 2rem 0 1.5rem;
         }
     }
 
-    .sub {
-        color: #f7f7f7;
+    @media screen and (max-width: 767px) {
+        padding: 4.8rem 0 2.4rem;
+    }
+}
+
+.award-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.35rem 1.25rem 0.35rem 0.35rem;
+    border-radius: 50px;
+    background-color: rgba(#fff, 0.07);
+    border: 1px solid rgba(#fff, 0.12);
+    color: rgba(#fff, 0.8);
+    font-size: 0.85rem;
+    line-height: 1.4;
+    opacity: 0;
+    transition: 250ms all ease;
+
+
+
+    // Deliberately not @extend .sub — that would also inherit the
+    // `opacity: 0` from `#masthead .masthead-header .sub` and hide the tag.
+    .award-pill-tag {
+        display: inline-block;
+        flex-shrink: 0;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 900;
+        font-family: "Jost", sans-serif;
+        font-size: 0.7rem;
+        color: #fff;
+        background-color: rgba(#fff, 0.14);
+        border-radius: 50px;
+        padding: 0.4rem 0.9rem;
+        white-space: nowrap;
+        transition: 250ms all ease;
     }
 
-    .content {
-        margin-top: 6rem;
+    .award-pill-text strong {
+        color: #fff;
     }
 
-    @media screen and (min-height: 1080px) {
-        // height:60vh;
+    .award-pill-link {
+        text-decoration: underline;
+        color: #fff;
+        font-weight: 700;
+        white-space: nowrap;
+        transition: 250ms all ease;
     }
 
-    @media screen and (max-width: 1199px) {
-        padding: 3rem 2rem 2rem;
+    &:hover {
+        background-color: rgba(#fff, 0.12);
+        text-decoration: none;
+        color:#FFF;
+        .award-pill-link {
+            color: $brand-blue;
+        }
+        .award-pill-tag{
+            background-color: $medium-blue;
+        }
     }
 
     @media screen and (max-width: 767px) {
-        padding: 3rem 0 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border-radius: 12px;
+        padding: 1rem;
     }
 }
 
 #home-work {
+
+    .tag {
+        border: 1px solid rgba($dark-gray, 0.2);
+        color: rgba($dark-gray, 0.75);
+
+        &.tag--accent {
+            border-color: $medium-blue;
+            color: $medium-blue;
+        }
+    }
+
+    .tags {
+        flex-wrap: wrap;
+    }
+}
+
+.work-card {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
-    padding: 4rem;
-    background-color: rgba(#fff, 0.15);
-    border-radius: 24px;
-    width: 100%;
+    background-color: #fff;
+    color: $dark-gray;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 250ms all ease;
 
-    @media screen and (max-width: 991px) {
-        padding: 3rem 2rem;
+
+    .work-card-image {
+        position: relative;
+        height: 200px;
+        background-color: #eef1f5;
+        flex-shrink: 0;
     }
 
-    @media screen and (max-width: 575px) {
-        padding: 2rem 1rem;
-        gap: 2rem;
-    }
-
-    h2 {
-        margin: 0;
-        text-align: center;
-        color: #fff;
-
-        @media screen and (max-width: 575px) {
-            font-size: 2.2rem;
-        }
-    }
-
-    #hydro-row {
+    .work-card-body {
         display: flex;
-        gap: 1rem;
         flex-direction: column;
-        border: 1px solid #fff;
-        border-radius: 8px;
+        align-items: flex-start;
+        gap: 1rem;
         padding: 2rem;
+        // flex: 1 fills the remaining height in the column-flex card;
+        // height: 100% does the same for the featured card's grid column.
+        flex: 1;
+        height: 100%;
 
-        @media screen and (max-width: 575px) {
-            padding: 1rem;
+        // Pin the CTA to the bottom so it lines up across cards of
+        // differing copy length
+        .arrow-btn {
+            margin-top: auto;
         }
 
-        .row-title {
+        h3 {
+            margin: 0;
+            font-size: 1.8rem;
+            color: $dark-gray;
+            transition: 250ms all ease;
+        }
+
+        p {
+            margin: 0;
+            color: rgba($dark-gray, 0.8);
+        }
+
+        @media screen and (max-width: 575px) {
+            padding: 1.5rem;
+        }
+    }
+
+    &--featured {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 2rem;
+
+        .work-card-image {
+            height: 100%;
+            min-height: 320px;
+        }
+
+        .work-card-body {
+            padding: 2.5rem;
+
             h3 {
-                color: #fff;
-                margin: 0;
-                font-size: 1.6rem;
+                font-size: 2.2rem;
             }
-
-            .sub-row {
-
-                margin: 1rem 0;
-                display: flex;
-                gap: 1rem;
-
-                h6 {
-                    margin: 0;
-                    padding: 0;
-                    font-size: 1rem;
-                }
-
-                .sub {
-                    min-width: 250px;
-
-                    @media screen and (max-width: 575px) {
-                        min-width: unset;
-                    }
-                }
-
-                p {
-                    margin: 0;
-                    padding: 0;
-                    color: #fff;
-
-                    a {
-                        color: #FFF;
-                        text-decoration: underline;
-                        font-weight: 600;
-                    }
-                }
-
-                @media screen and (max-width: 991px) {
-                    flex-direction: column;
-                    gap: 1rem;
-                }
-            }
-
 
             @media screen and (max-width: 575px) {
-                padding-top: 1rem;
-                text-align: center;
-            }
-        }
-
-        .work-row {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 1.5rem;
-
-            .work-preview {
-                width: 100%;
-                height: 255px;
-
-                @media screen and (max-width: 991px) {
-                    height: auto;
-
-                    &:before {
-                        background: linear-gradient(255.43deg,
-                                rgba(0, 23, 31, 0) 0%,
-                                rgba(0, 23, 31, 0.35) 25%,
-                                rgba(0, 23, 31, 0.75) 100%);
-                    }
-                }
-            }
-
-            @media screen and (max-width: 991px) {
-                gap: 1rem;
-                flex-direction: column;
-                grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-            }
-        }
-    }
-
-    .second-row {
-        display: flex;
-        gap: 1.5rem;
-
-        >a {
-            width: 35%;
-            height: 18rem;
-
-            @media screen and (max-width: 991px) {
-                width: 100%;
-                height: 200px;
-
-                &:before {
-                    background: linear-gradient(255.43deg,
-                            rgba(0, 23, 31, 0) 0%,
-                            rgba(0, 23, 31, 0.35) 25%,
-                            rgba(0, 23, 31, 0.75) 100%);
-                }
-            }
-        }
-
-        .text-card {
-            height: 18rem;
-            border: 1px solid #fff;
-            border-radius: 8px;
-            padding: 2rem;
-            width: 30%;
-
-            h3 {
-                margin: 0;
-                font-size: 1.8rem;
-                color: #fff;
-            }
-
-            color: #fff;
-
-            .text-links {
-                display: flex;
-                flex-direction: column;
-                gap: 0.2rem;
-            }
-
-            a {
-                color: #fff;
-                text-decoration: underline;
-                font-weight: 600;
-                padding-bottom: 0.2rem;
-                border-bottom: 1px solid rgba(#fff, 0.25);
-
-                &:last-of-type {
-                    border-bottom: none;
-                }
-            }
-
-            @media screen and (max-width: 991px) {
-                width: 100%;
+                padding: 1.5rem;
             }
         }
 
         @media screen and (max-width: 991px) {
-            gap: 1rem;
-            flex-direction: column;
+            grid-template-columns: 1fr;
+
+            .work-card-image {
+                min-height: 240px;
+            }
+
+            .work-card-body h3 {
+                font-size: 1.8rem;
+            }
         }
     }
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 20px 40px rgba(#000, 0.25);
+        text-decoration: none;
 
-    .blob-container {
-        width: 100%;
-        height: 100%;
-        z-index: 2;
-
-        border-radius: 24px;
-        position: relative;
-        padding: 5rem 1rem;
-
-        @media screen and (max-width: 575px) {
-            padding: 3rem 0.25rem;
+        .work-card-body h3 {
+            color: $brand-blue
         }
+    }
+}
 
-        overflow: hidden;
-        box-shadow: 0px 20px 20px rgba($blue, 0.1);
+.work-card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
 
-        .blob {
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: 0 auto;
-
-            @media screen and (max-width: 767px) {
-                height: 1000px;
-                width: 1000px;
-            }
-
-            svg {
-                z-index: 2;
-                width: 100%;
-                height: 100%;
-            }
-        }
-
-        .container {
-            z-index: 3;
-        }
+    @media screen and (max-width: 767px) {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 }
 
 #home-blog {
-    background-color: $dark-gray;
-    padding: 10rem 0;
-
-    @media screen and (max-width: 575px) {
-        padding: 5rem 0 3rem;
-    }
-
+    padding: 4.8rem 0;
     position: relative;
 
-    h2 {
-        margin-bottom: 5rem;
-        color: #fff;
-
-        @media screen and (max-width: 575px) {
-            margin-bottom: 2rem;
-        }
+    @media screen and (max-width: 575px) {
+        padding: 3rem 0;
     }
 
-    .blog-blob {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
+    .post-preview {
+        background-color: rgba(#fff, 0.04);
+        border: 1px solid rgba(#fff, 0.1);
 
-        @media screen and (max-width: 767px) {
-            width: 1000px;
-            height: 1000px;
-            top: 0;
-            left: -50%;
-            bottom: 0;
-            right: 0;
+        // Cards are only ~218px wide at 768px — the global 2rem padding and
+        // 1.8rem headline left almost no measure. Scoped so /blog is untouched.
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+            .text {
+                padding: 1.25rem;
+                gap: 1.25rem;
+            }
+
+            h3 {
+                font-size: 1.35rem;
+            }
         }
-
-        svg {
-            z-index: 1;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-        }
-    }
-
-    .container {
-        z-index: 3;
-        position: relative;
     }
 
     .cardWrapper {
+        // Tablet keeps all three across rather than stacking them full-bleed —
+        // a 685px-wide card with a 200px image reads as a banner, not a card,
+        // and 2-up leaves an orphan. At 768px each card is ~217px, at 991px
+        // ~292px. To go back to stacked, move `flex-direction: column` up to
+        // the 991px query.
         @media screen and (max-width: 991px) {
-
             gap: 1rem;
-
         }
 
         @media screen and (max-width: 767px) {
-
             flex-direction: column;
-
         }
     }
-
 }
 
 #contact {
     width: 100%;
-    background-attachment: fixed;
-    background-image: url("/geography-blue.svg");
-    background-size: cover;
-    background-position: left top;
-
-    padding: 7rem 0;
+    padding: 2.4rem 0 4.8rem;
     position: relative;
 
-    .row {
-        display: flex;
-        gap: 2rem;
-        justify-content: space-between;
-        align-items: center;
-
-        @media screen and (max-width: 767px) {
-            flex-direction: column;
-        }
-    }
-
     @media screen and (max-width: 575px) {
-        padding: 2rem 0;
+        padding: 2rem 0 3rem;
     }
 
-    h2 {
-        font-size: 3rem;
-        text-align: center;
-    }
-
-    h3 {
-        font-size: 1.5rem;
-        color: #fff;
-    }
-
-    .sub {
-        color: $blue;
-
-        &.line:after {
-            background-color: $blue;
-        }
-    }
-
-    #about {
-        position: relative;
-        padding: 2rem;
-        background-color: rgba(#fff, 0.5);
-        border: 1px solid #fff;
-        backdrop-filter: blur(5px);
-        border-radius: 8px;
-        width: 60%;
+    .contact-card {
+        display: grid;
+        grid-template-columns: 1.4fr 1fr;
+        gap: 3rem;
+        padding: 3rem;
+        background-color: $navy-deep;
+        border: 1px solid rgba(#fff, 0.08);
+        border-radius: 16px;
 
         @media screen and (max-width: 991px) {
-            width: 45%;
-        }
-
-        @media screen and (max-width: 767px) {
-            width: 100%;
-        }
-
-        .top-row {
-            display: flex;
-            align-items: center;
+            grid-template-columns: 1fr;
             gap: 2rem;
-
-            .image {
-                height: 250px;
-                width: 250px;
-
-                @media screen and (max-width: 991px) {
-                    width: 100%;
-                }
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    object-position: top;
-                }
-            }
-
-            @media screen and (min-width: 767px) and (max-width: 991px) {
-                flex-direction: column;
-            }
-
-            @media screen and (max-width: 575px) {
-                flex-direction: column;
-
-                .image {
-                    height: 300px;
-
-                    img {
-                        object-position: 50% 12%;
-                    }
-                }
-            }
-
-            .text {
-                width: calc(100% - 250px);
-
-                @media screen and (max-width: 991px) {
-                    width: 100%;
-                }
-
-                .about-text-header {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    flex-wrap: wrap;
-
-                    h4 {
-                        @extend .sub;
-                        margin: 0;
-                    }
-
-                    p {
-                        margin: 0;
-                        padding: 0;
-                    }
-                }
-            }
         }
 
-        .image {
-            z-index: 1;
+        @media screen and (max-width: 575px) {
+            padding: 1.5rem;
+        }
+    }
 
-            .gatsby-image-wrapper {
-                height: 100% !important;
-                width: 100% !important;
+    .contact-about {
+        p {
+            color: rgba(#fff, 0.75);
+
+            a {
+                color: #fff;
+                text-decoration: underline;
             }
+        }
+    }
+
+    .contact-identity {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+
+        .avatar {
+            flex-shrink: 0;
+            height: 72px;
+            width: 72px;
+            border-radius: 50%;
+            overflow: hidden;
 
             img {
                 width: 100%;
                 height: 100%;
-                position: relative;
-                border-radius: 8px;
+                object-fit: cover;
+                object-position: top;
+            }
+        }
 
-                @media screen and (max-width: 767px) {
-                    border-bottom-left-radius: 0;
-                    border-bottom-right-radius: 0;
+        h3 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #fff;
+        }
+    }
+
+    .sub {
+        color: $brand-blue;
+
+        &.line:after {
+            background-color: $brand-blue;
+        }
+    }
+
+    .socials {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 2rem;
+
+        a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #fff;
+            @extend .sub;
+            transition: 250ms all ease;
+
+            &:hover {
+                color: $brand-blue;
+                text-decoration: none;
+
+                svg {
+                    fill: $brand-blue;
                 }
             }
         }
 
-        .socials {
-            display: flex;
-            align-items: center;
-
-            svg {
-                height: 32px;
-                width: 32px;
-                object-fit: contain;
-                margin-right: 0.5rem;
-            }
+        svg {
+            height: 24px;
+            width: 24px;
+            object-fit: contain;
+            fill: #fff;
+            transition: 250ms all ease;
         }
     }
 
     .form {
-        border: 1px solid $text-blue;
-
-        backdrop-filter: blur(5px);
-        background-color: rgba($text-blue, 0.6);
+        background-color: rgba(#fff, 0.05);
+        border: 1px solid rgba(#fff, 0.1);
+        border-radius: 12px;
         padding: 2rem;
-        border-radius: 8px;
-        width: 40%;
+        height: fit-content;
 
-        @media screen and (max-width: 991px) {
-            width: 55%;
+        h3 {
+            font-size: 1.5rem;
+            color: #fff;
+            margin-top: 0;
         }
 
-        @media screen and (max-width: 767px) {
-            width: 100%;
+        @media screen and (max-width: 575px) {
+            padding: 1.25rem;
         }
 
         .status,
@@ -656,40 +628,36 @@ svg path {
     input[type="text"],
     input[type="email"],
     textarea {
-        background-color: rgba(#fff, 0.75);
-        padding: 1.2rem 1rem 1rem;
+        background-color: rgba(#000, 0.3);
+        color: #fff;
+        padding: 1.6rem 1rem 0.8rem;
         width: 100%;
-        border: 1px solid #fff;
+        border: 1px solid rgba(#fff, 0.15);
         transition: 250ms all ease;
         border-radius: 4px;
 
         &:focus {
-            border-color: $blue;
+            border-color: $brand-blue;
+            outline: none;
         }
-
-        // &:valid {
-        //     background-color: transparent;
-        //     border-color: rgba($blue, 0.5);
-        // }
     }
 
-    input[type="submit"] {
-        margin-top: 1rem;
-        @extend .btn;
-        //@extend .btn.solid;
+    textarea {
+        min-height: 120px;
     }
 
     ::placeholder {
-        color: rgba($dark-gray, 0.3);
+        color: rgba(#fff, 0.35);
     }
 
     form>div>label {
         position: absolute;
         font-size: 11px;
-        top: 0.3rem;
+        top: 0.5rem;
         left: 16px;
         transition: all 0.1s ease-in-out;
         z-index: 1;
+        color: rgba(#fff, 0.6);
         @extend .sub;
     }
 }
@@ -1020,6 +988,49 @@ svg path {
         .label {
             margin: 0;
             line-height: 1.2;
+        }
+    }
+
+    // Bare variant for light card surfaces — no box, smaller numbers
+    &--bare {
+        gap: 1.5rem;
+
+        @media screen and (max-width: 767px) {
+            flex-direction: row;
+        }
+
+        // At 320-390px three columns left ~65px each and the labels broke
+        // into 4-5 lines. Tighten the type so the row still scans.
+        @media screen and (max-width: 575px) {
+            gap: 0.75rem;
+
+            .stat {
+                .num {
+                    font-size: 1.4rem;
+                }
+
+                .label {
+                    font-size: 0.75rem;
+                }
+            }
+        }
+
+        .stat {
+            background-color: transparent;
+            border: 0;
+            padding: 0;
+
+            .num {
+                font-size: 1.75rem;
+                line-height: 1.1;
+                margin-bottom: 0.35rem;
+                color: $dark-gray;
+            }
+
+            .label {
+                font-size: 0.85rem;
+                color: rgba($dark-gray, 0.7);
+            }
         }
     }
 }

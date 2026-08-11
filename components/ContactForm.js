@@ -59,8 +59,8 @@ export default () => {
             });
     };
     return (
-        <main>
-            <h3>Send a message</h3>
+        <div>
+            <h3>Get in touch</h3>
             <form onSubmit={handleOnSubmit}>
                 <div className="input-wrapper">
                     <label htmlFor="email">Email</label>
@@ -86,13 +86,13 @@ export default () => {
                 <button
                     type="submit"
                     disabled={status.submitting}
-                    className="btn solid white"
+                    className="btn solid"
                 >
                     {!status.submitting
                         ? !status.submitted
-                            ? "Submit"
-                            : "Submitted"
-                        : "Submitting..."}
+                            ? "Send"
+                            : "Sent"
+                        : "Sending..."}
                 </button>
             </form>
             {status.info.error && (
@@ -101,6 +101,6 @@ export default () => {
             {!status.info.error && status.info.msg && (
                 <div className="status">{status.info.msg}</div>
             )}
-        </main>
+        </div>
     );
 };

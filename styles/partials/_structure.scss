@@ -168,7 +168,13 @@ nav {
     width: 100%;
     color: #fff;
     display: flex;
+    align-items: center;
     padding: 0 1rem;
+
+    @media screen and (max-width: 575px) {
+        margin: 1.25rem auto;
+    }
+
     a {
         color: #fff;
         @extend .sub;
@@ -178,15 +184,50 @@ nav {
         }
     }
 
+    .logo {
+        @media screen and (max-width: 400px) {
+            a {
+                font-size: 0.7rem;
+                letter-spacing: 1px;
+            }
+        }
+    }
+
     .menu {
         margin-left: auto;
         display: flex;
-        gap: 4rem;
+        align-items: center;
+        gap: 2.5rem;
+
+        @media screen and (max-width: 767px) {
+            gap: 1.25rem;
+        }
+
+        // Below ~480px the logo + 3 items no longer fit on one row and the
+        // whole nav wrapped to two lines. Tighten type and spacing instead.
+        @media screen and (max-width: 480px) {
+            gap: 0.85rem;
+
+            a {
+                font-size: 0.7rem;
+                letter-spacing: 1px;
+            }
+        }
+    }
+
+    // .btn's 3rem side padding is far too wide for a nav pill
+    .nav-resume {
+        padding: 0.4rem 1.5rem;
+        white-space: nowrap;
+
+        @media screen and (max-width: 480px) {
+            padding: 0.3rem 0.8rem;
+        }
     }
 }
 
 footer {
-    background-color: $dark-gray;
+    background-color: $navy-deep;
     color: rgba(#fff, 0.6);
     @extend .sub;
     padding: 1rem;

@@ -39,6 +39,14 @@ export default function Layout({ children, home }) {
                         <div className="menu">
                             <Link href="/blog">Blog</Link>
                             <Link href="/work">Work</Link>
+                            <Link
+                                href="/resume.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn outline white nav-resume"
+                            >
+                                Resume
+                            </Link>
                         </div>
                     </nav>
                 }
@@ -46,7 +54,7 @@ export default function Layout({ children, home }) {
             {/* GTM */}
             <GoogleTagManager gtmId="GTM-MNDVSC5P" />
             <main>{children}</main>
-            <footer>Made with Next.js by Jason Somai</footer>
+            <footer>Jason Somai | All Rights Reserved ©2026</footer>
         </main>
     );
 }
