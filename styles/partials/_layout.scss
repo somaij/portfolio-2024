@@ -28,5 +28,12 @@ margin: 3rem 0 0;
     &--two-col {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+
+        // Two 280px-min cards + the 2rem gap need ~640px of content box, so
+        // anything narrower pushed the right-hand column past the viewport.
+        @media screen and (max-width: 767px) {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
     }
 }

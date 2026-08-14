@@ -1760,14 +1760,13 @@ svg path {
             position: relative;
         }
 
-        .cardWrapper {
-            flex-wrap: wrap;
-
-            .post-preview {
-                flex: 1 1 calc(33% - 1.5rem);
-                min-width: 280px;
-            }
-        }
+        // No sizing rules here — .cardWrapper--two-col owns the columns.
+        // The old `flex: 1 1 calc(33% - 1.5rem); min-width: 280px` on
+        // .post-preview was left over from the 3-across flex layout: `flex` is
+        // inert on a grid item, but `min-width` still forced both 1fr tracks to
+        // 280px, so below ~640px the second column sat outside the viewport
+        // (clipped by the `overflow-x: hidden` on html/body under 575px, and a
+        // horizontal scrollbar above it).
     }
 }
 
